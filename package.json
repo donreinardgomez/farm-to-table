@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/concurrently \"yarn watch-sass\" \"yarn watch-dev\"",
+    "start": "./node_modules/.bin/concurrently \"npm run watch-sass\" \"npm run watch-dev\"",
     "watch-sass": "./node_modules/.bin/tsm --watch src/",
     "watch-dev": "webpack serve --config webpack.dev.config.ts",
     "build": "webpack --config webpack.prod.config.ts"

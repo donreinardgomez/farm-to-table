@@ -155,18 +155,6 @@
   background-image: url(\./assets/home.svg);
 }
 
-.logo {
-  width: 336px;
-  height: 160px;
-  background-image: url(\./assets/f2t-logo.png);
-}
-
-.logo-header {
-  width: 325px;
-  height: 82px;
-  background-image: url(\./assets/f2t-header-logo.png);
-}
-
 .man-logo-1 {
   width: 50px;
   height: 50px;
@@ -285,4 +273,28 @@
   width: 50px;
   height: 50px;
   background-image: url(\./assets/man-logo-20.png);
+}
+
+.logo-main {
+  width: 315px;
+  height: 227px;
+  background-image: url(\./assets/logo-main.png);
+}
+
+.logo-main-mono {
+  width: 331px;
+  height: 64px;
+  background-image: url(\./assets/logo-main-mono.png);
+}
+
+.logo-header {
+  width: 332px;
+  height: 70px;
+  background-image: url(\./assets/logo-header.png);
+}
+
+.logo-header-mono {
+  width: 331px;
+  height: 64px;
+  background-image: url(\./assets/logo-header-mono.png);
 }

@@ -49,8 +49,6 @@ export type Type =
   | 'tips-active'
   | 'tips2'
   | 'tips2-active'
-  | 'logo'
-  | 'logo-header'
   | 'man-logo-1'
   | 'man-logo-2'
   | 'man-logo-3'
@@ -70,4 +68,8 @@ export type Type =
   | 'man-logo-17'
   | 'man-logo-18'
   | 'man-logo-19'
-  | 'man-logo-20';
+  | 'man-logo-20'
+  | 'logo-main'
+  | 'logo-main-mono'
+  | 'logo-header'
+  | 'logo-header-mono';

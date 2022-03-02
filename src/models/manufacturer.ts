@@ -6,6 +6,7 @@ export interface IManufacturer {
   thumbnail?: string;
   address?: string;
   rating?: number;
+  ranking?: number;
   items?: IItem[];
   aiFeedback?: string;
 }

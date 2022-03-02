@@ -1,7 +1,7 @@
 @import '../../global-styles/global.scss';
 
 .header {
-  background-color: $white;
+  background-color: $ey-yellow;
   width: 100%;
   height: 100px;
   display: flex;
@@ -10,7 +10,7 @@
   top: 0;
   z-index: 10;
   justify-content: space-between;
-  box-shadow: 0 8px 14px -6px $gray-3;
+  box-shadow: 0 8px 14px -6px $black;
 }
 
 .logo {

@@ -8,7 +8,7 @@ import styles from './style.scss';
 export const Header: React.FC<Props> = () => {
   return (
     <div className={styles.header}>
-      <Logo className={styles.logo} type='logo-header' />
+      <Logo className={styles.logo} type='logo-header-mono' />
     </div>
   );
 };
