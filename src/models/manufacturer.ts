@@ -1,7 +1,11 @@
+import { IItem } from './item';
+
 export interface IManufacturer {
   name: string;
+  industry: string;
+  thumbnail?: string;
   address?: string;
   rating?: number;
-  badge?: 'none' | 'bronze' | 'silver' | 'gold';
-  aiFeedback: string;
+  items?: IItem[];
+  aiFeedback?: string;
 }

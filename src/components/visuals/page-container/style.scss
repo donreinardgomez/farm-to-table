@@ -1,0 +1,17 @@
+@import '../../global-styles/global.scss';
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+
+  &.normal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &.centered {
+    align-items: center;
+    justify-content: center;
+  }
+}

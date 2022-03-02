@@ -1,0 +1,58 @@
+@import '../../global-styles/global.scss';
+
+.row {
+  width: 100%;
+  height: auto;
+}
+
+.even {
+  background-color: $green-6;
+}
+
+.odd {
+  background-color: $white;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+
+  &-set {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.feedback {
+  border-top: 1px solid $gray-5;
+  padding: 10px;
+
+  &-app {
+    height: 300px;
+    overflow-y: scroll;
+  }
+}
+
+.icon {
+  display: inline-flex;
+  cursor: pointer;
+
+  &-active {
+    color: $gray-1;
+  }
+
+  &-inactive {
+    color: $gray-2;
+  }
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid $gray-3;
+  margin-right: 10px;
+  // box-shadow: 1px 1px 2px 2px $gray-2;
+}

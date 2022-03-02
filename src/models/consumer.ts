@@ -1,6 +1,7 @@
 export interface IConsumer {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
   greenPoints?: number;
-  badge?: 'none' | 'bronze' | 'silver' | 'gold';
+  badge?: 'none' | 'bronze' | 'silver' | 'gold' | 'platinum';
 }

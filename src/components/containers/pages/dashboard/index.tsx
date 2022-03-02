@@ -3,19 +3,17 @@ import { setDisplayConsumer, setDisplayManufacturer } from '@actions/ui';
 import { IConsumer } from '@models/consumer';
 import { IManufacturer } from '@models/manufacturer';
 import { IStore } from '@models/store';
-import { Icon } from '@visuals/icon';
+import { PageContainer } from '@visuals/page-container';
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import styles from './style.scss';
+import { Manufacturers } from '../manufacturers';
 
-const DashboardFC: React.FC<Props> = ({ state: { ui, data } }) => {
+const DashboardFC: React.FC<Props> = () => {
   return (
-    <div className={styles.pageLayout}>
-      <Icon type='eyedropper' />
-      {JSON.stringify(ui)}
-      {JSON.stringify(data)}
-    </div>
+    <PageContainer>
+      <Manufacturers />
+    </PageContainer>
   );
 };
 

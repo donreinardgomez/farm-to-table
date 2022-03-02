@@ -1,5 +1,5 @@
+import globalStyles from '@/components/global-styles/global.scss';
 import { GRAPH_DATA_LABELS_TIMEOUT, GRAPH_HEIGHT } from '@app-settings';
-import globalStyles from '@globalStyles/global.scss';
 import { IGraphConfig } from '@models/graph-config';
 import { formatNumber } from '@utils/format-number';
 import { isOk } from '@utils/is-ok';

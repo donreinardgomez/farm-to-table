@@ -1,4 +1,4 @@
-import globalStyles from '@globalStyles/global.scss';
+import globalStyles from '@/components/global-styles/global.scss';
 import { SeriesOptionsType } from 'highcharts';
 
 export const DEFAULT_DASHBOARD_GRAPH_YEAR_TRAVERSAL_LIMIT = 1;

@@ -24,7 +24,7 @@
     "keyofStringsOnly": true,
     "paths": {
       "@i18n/*": ["i18n/*"],
-      "@globalStyles/*": ["components/.global-styles/*"],
+      "@globalStyles/*": ["components/global-styles/*"],
       "@visuals/*": ["components/visuals/*"],
       "@containers/*": ["components/containers/*"],
       "@models/*": ["models/*"],

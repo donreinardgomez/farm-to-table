@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import styles from './style.scss';
 
-export class Icon extends React.PureComponent<Props> {
+export class F2TIcon extends React.PureComponent<Props> {
   public static defaultProps: Partial<Props> = {
     isCircular: false,
     size: 'medium',

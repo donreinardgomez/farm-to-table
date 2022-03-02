@@ -1,10 +1,12 @@
 import { IData } from '@models/data';
 import { AllAction } from '@store/actions';
+import { dummyConsumers } from '@store/dummy/consumers';
+import { dummyManufacturers } from '@store/dummy/manufacturer';
 import { updateObject } from '@utils/update-object';
 
 const initialState: IData = {
-  consumers: [],
-  manufacturers: [],
+  consumers: [...dummyConsumers],
+  manufacturers: [...dummyManufacturers],
 };
 
 export function data(state: IData = initialState, action: AllAction) {

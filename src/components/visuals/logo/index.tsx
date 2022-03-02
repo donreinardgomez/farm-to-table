@@ -21,7 +21,7 @@ interface IDispatchProps {
 }
 
 interface IStateProps {
-  type: Type;
+  type: Type | string;
 }
 
 export type Type =
@@ -48,4 +48,26 @@ export type Type =
   | 'tips'
   | 'tips-active'
   | 'tips2'
-  | 'tips2-active';
+  | 'tips2-active'
+  | 'logo'
+  | 'logo-header'
+  | 'man-logo-1'
+  | 'man-logo-2'
+  | 'man-logo-3'
+  | 'man-logo-4'
+  | 'man-logo-5'
+  | 'man-logo-6'
+  | 'man-logo-7'
+  | 'man-logo-8'
+  | 'man-logo-9'
+  | 'man-logo-10'
+  | 'man-logo-11'
+  | 'man-logo-12'
+  | 'man-logo-13'
+  | 'man-logo-14'
+  | 'man-logo-15'
+  | 'man-logo-16'
+  | 'man-logo-17'
+  | 'man-logo-18'
+  | 'man-logo-19'
+  | 'man-logo-20';
