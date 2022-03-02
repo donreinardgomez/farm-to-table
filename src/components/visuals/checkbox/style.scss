@@ -1,0 +1,49 @@
+@import '../../.global-styles/global.scss';
+
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0 13px 0 0;
+  background-color: $white;
+  border: 1px solid $gray-1;
+  border-radius: 3px;
+  vertical-align: top;
+  outline: none;
+
+  &:checked {
+    border: none;
+
+    &.normal {
+      background-color: $primary;
+    }
+
+    &.alert {
+      background-color: $alert-1;
+    }
+  }
+
+  &:checked + .check-icon {
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 10px;
+    top: 5px;
+    left: 7px;
+    border-right: 1px solid $white;
+    border-bottom: 1px solid $white;
+    transform: rotateZ(45deg);
+  }
+
+  &-container {
+    display: inline-block;
+    height: 24px;
+  }
+}
+
+.label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

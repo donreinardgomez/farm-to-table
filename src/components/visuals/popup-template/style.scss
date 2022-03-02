@@ -1,0 +1,49 @@
+@import '../../.global-styles/global.scss';
+
+.button {
+  &-container {
+    background-color: $bg-3;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    height: 56px;
+    align-items: center;
+  }
+
+  &-main {
+    padding-left: 20px;
+
+    &-item {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 40px 12px;
+}
+
+.icon {
+  font-size: 32px;
+  padding-right: 10px;
+  margin-left: 14px;
+
+  &.alert {
+    color: $alert-1;
+  }
+
+  &.normal {
+    color: $primary;
+  }
+}
+
+.contents {
+  padding: 0 60px 30px;
+}

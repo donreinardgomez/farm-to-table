@@ -1,0 +1,39 @@
+@import '../../.global-styles/global.scss';
+
+.date-picker {
+  background-color: $white;
+  border-radius: 8px;
+
+  > :global(.MuiOutlinedInput-root) {
+    height: 46px;
+    border-radius: 8px;
+    border-color: $bg-1 !important;
+  }
+
+  > :global(.MuiOutlinedInput-root) > :global(.MuiInputBase-input) {
+    font-family: $main-font;
+    font-size: 14px;
+  }
+
+  > :global(.MuiOutlinedInput-root) {
+    height: 46px;
+    border-radius: 8px;
+    border-color: $bg-1 !important;
+  }
+
+  > :global(.MuiOutlinedInput-root) > :global(.MuiOutlinedInput-notchedOutline) {
+    border-color: $bg-1 !important;
+    border-width: 1px !important;
+  }
+
+  &.disabled {
+    > :global(.MuiInputBase-root.Mui-disabled) {
+      background-color: $bg-2 !important;
+      color: $gray-3 !important;
+    }
+  }
+}
+
+.label {
+  margin-bottom: -11px;
+}

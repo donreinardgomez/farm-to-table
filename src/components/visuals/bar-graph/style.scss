@@ -1,0 +1,46 @@
+@import '../../.global-styles/global.scss';
+
+:root {
+  --bg-color: $black;
+}
+
+.bar-graph {
+  text-align: right;
+}
+
+.stepper {
+  padding-bottom: 10px;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legend {
+  border: 1px solid;
+  background-color: $bg-2;
+}
+
+.dead-legend {
+  visibility: hidden;
+}
+
+.legend-wrapper {
+  padding: 0 5px;
+  background-color: $bg-3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  span {
+    padding: 5px;
+    margin: 0 5px 0 2px;
+    background-color: var(--bg-color);
+  }
+}
+
+.tips {
+  padding-top: 10px;
+}

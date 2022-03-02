@@ -1,0 +1,156 @@
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.clickable {
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+.analysis {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/analysis.svg);
+}
+
+.analysis-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/analysis-active.svg);
+}
+
+.tips {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/tips.svg);
+}
+
+.tips-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/tips-active.svg);
+}
+
+.tips2 {
+  width: 64px;
+  height: 24px;
+  background-image: url(\./assets/tips2.svg);
+}
+
+.tips2-active {
+  width: 64px;
+  height: 24px;
+  background-image: url(\./assets/tips2-active.svg);
+}
+
+.comment {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/comment.svg);
+}
+
+.comment-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/comment-active.svg);
+}
+
+.company-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/company-active.svg);
+}
+
+.company {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/company.svg);
+}
+
+.dashboard-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/dashboard-active.svg);
+}
+
+.dashboard {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/dashboard.svg);
+}
+
+.data-input-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/data-input-active.svg);
+}
+
+.data-input {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/data-input.svg);
+}
+
+.dictionary {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/dictionary.svg);
+}
+
+.dictionary-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/dictionary-active.svg);
+}
+
+.fraud {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/fraud.svg);
+}
+
+.fraud-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/fraud-active.svg);
+}
+
+.format-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/format-active.svg);
+}
+
+.format {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/format.svg);
+}
+
+.graph {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/graph.svg);
+}
+
+.graph-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/graph-active.svg);
+}
+
+.home-active {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/home-active.svg);
+}
+
+.home {
+  width: 48px;
+  height: 48px;
+  background-image: url(\./assets/home.svg);
+}

@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "pretty": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": false,
+    "target": "es2017",
+    "noResolve": false,
+    "strictNullChecks": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "keyofStringsOnly": true,
+    "paths": {
+      "@i18n/*": ["i18n/*"],
+      "@globalStyles/*": ["components/.global-styles/*"],
+      "@visuals/*": ["components/visuals/*"],
+      "@containers/*": ["components/containers/*"],
+      "@models/*": ["models/*"],
+      "@utils/*": ["utils/*"],
+      "@store/*": ["store/*"],
+      "@actions/*": ["store/actions/*"],
+      "@env": ["../env"],
+      "@app-settings": ["../app-settings"],
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", "build"],
+  "typeRoots": ["node_modules/@types", "src/@type"],
+  "include": ["./src/**/*", "@type"]
+}

@@ -1,0 +1,11 @@
+# Libs
+/node_modules
+
+# Genereted Files
+/build
+**/*.scss.d.ts
+env.ts
+
+# Logs
+yarn-error.log
+npm

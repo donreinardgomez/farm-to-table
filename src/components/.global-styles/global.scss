@@ -1,0 +1,287 @@
+/* Main Font */
+$main-font: 'segoe ui', meiryo, 'yu gothic', 'hiragino Kaku Gothic ProN', sans-serif;
+
+/* Basic */
+$black: #000;
+$white: #fff;
+$red: #bf0000;
+
+/* Alert */
+$alert-1: #dd2a4f;
+$alert-2: #ff305a;
+
+/* Primary */
+$primary: #007cc2;
+$primary-1: #0092e4;
+$primary-2: #07a5ff;
+$primary-3: #29b2ff;
+$primary-4: #4bbeff;
+$primary-5: #6dcaff;
+$primary-6: #8fd7ff;
+$primary-7: #b1e3ff;
+
+/* Input */
+$input-number: #1177cc;
+$input-area: #fff9cc;
+
+/* Accents */
+$favorite: #f6ac29;
+$highlight: #e2fab5;
+
+/* Gray */
+$gray-1: #303338;
+$gray-2: #4f545d;
+$gray-3: #9297a2;
+
+/* Background */
+$bg-1: #d1e1ee;
+$bg-2: #e4edf5;
+$bg-3: #f5f7f9;
+$bg-alert: #fde8ed;
+
+/* Navy */
+$navy-1: #3762b0;
+$navy-2: #517cc9;
+$navy-3: #7899d5;
+$navy-4: #9fb7e1;
+$navy-5: #c6d4ed;
+$navy-6: #347abd;
+
+/* Orange */
+$orange-1: #c55a18;
+$orange-2: #e5722b;
+$orange-3: #eb9058;
+$orange-4: #f0ae86;
+$orange-5: #f6ccb3;
+
+/* Yellow */
+$yellow-1: #f6ac29;
+$yellow-2: #febf2c;
+$yellow-3: #fece5f;
+$yellow-4: #fede91;
+//$yellow-5: #ffedc4;
+$yellow-5: #fff9cc;
+
+/* Blue */
+$blue-1: #2e75b5;
+$blue-2: #468fd0;
+$blue-3: #6fa7da;
+$blue-4: #97c0e6;
+$blue-5: #c0d9ef;
+
+/* Green */
+$green-1: #62993f;
+$green-2: #7bb853;
+$green-3: #96c777;
+$green-4: #b2d69b;
+$green-5: #cee6bf;
+
+/* Pink */
+$pink-1: #c94ec6;
+$pink-2: #d575d3;
+$pink-3: #e19cdf;
+$pink-4: #edc3ec;
+$pink-5: #f5ddf4;
+
+/* Key */
+$key-1: #3366fb;
+$key-2: #fd7b80;
+$key-3: #92d050;
+$key-4: #33c7bc;
+
+/* Box Icon */
+$box-icon-max-width: 200px;
+$box-icon-max-height: 120px;
+
+/* Financial Data Summary */
+$summary-1: #303338;
+$summary-2: #33c7bc;
+$summary-3: #fd7b80;
+
+/* Gradiations */
+$grad-00: #95b359;
+$grad-01: #a4be71;
+$grad-02: #b4c98a;
+$grad-03: #c5d5a4;
+$grad-04: #d4e1bc;
+$grad-05: #e4ecd5;
+$grad-10: #68b359;
+$grad-11: #7ebe71;
+$grad-12: #95c98a;
+$grad-13: #acd5a4;
+$grad-14: #c2e1bc;
+$grad-15: #d9ecd5;
+$grad-20: #59b377;
+$grad-21: #71be8b;
+$grad-22: #8ac99f;
+$grad-23: #a4d5b4;
+$grad-24: #bce1c8;
+$grad-25: #d5ecdd;
+$grad-30: #59b3a4;
+$grad-31: #71beb1;
+$grad-32: #8ac9bf;
+$grad-33: #a4d5cd;
+$grad-34: #bce1da;
+$grad-35: #d5ece8;
+$grad-40: #4396bf;
+$grad-41: #5fa5c8;
+$grad-42: #7bb5d2;
+$grad-43: #97c5dc;
+$grad-44: #b3d5e5;
+$grad-45: #d0e5ef;
+
+/* Spot */
+$spot-0: #43bab2;
+$spot-1: #f08d91;
+$spot-2: #7cb5ec;
+$spot-3: #81d470;
+$spot-4: #eb9b59;
+$spot-5: #8488db;
+$spot-6: #d95272;
+$spot-7: #c9bb4b;
+$spot-8: #318f8d;
+$spot-9: #db5c5c;
+$spot-10: #82cfc7;
+$spot-11: #60b8e0;
+
+/* =============================================== */
+/* = COPY ALL COLORS USED IN SPREADJS HERE = */
+/* =============================================== */
+:export {
+  black: $black;
+  white: $white;
+  red: $red;
+
+  /* Alert */
+  alert-1: $alert-1;
+  alert-2: $alert-2;
+
+  /* Primary */
+  primary: $primary;
+  primary-1: $primary-1;
+  primary-2: $primary-2;
+  primary-3: $primary-3;
+  primary-4: $primary-4;
+  primary-5: $primary-5;
+  primary-6: $primary-6;
+  primary-7: $primary-7;
+
+  /* Input */
+  input-number: $input-number;
+  input-area: $input-area;
+
+  /* Accents */
+  favorite: $favorite;
+  highlight: $highlight;
+
+  /* Gray */
+  gray-1: $gray-1;
+  gray-2: $gray-2;
+  gray-3: $gray-3;
+
+  /* Background */
+  bg-1: $bg-1;
+  bg-2: $bg-2;
+  bg-3: $bg-3;
+  bg-alert: $bg-alert;
+
+  /* Navy */
+  navy-1: $navy-1;
+  navy-2: $navy-2;
+  navy-3: $navy-3;
+  navy-4: $navy-4;
+  navy-5: $navy-5;
+  navy-6: $navy-6;
+
+  /* Orange */
+  orange-1: $orange-1;
+  orange-2: $orange-2;
+  orange-3: $orange-3;
+  orange-4: $orange-4;
+  orange-5: $orange-5;
+
+  /* Yellow */
+  yellow-1: $yellow-1;
+  yellow-2: $yellow-2;
+  yellow-3: $yellow-3;
+  yellow-4: $yellow-4;
+  yellow-5: $yellow-5;
+
+  /* Blue */
+  blue-1: $blue-1;
+  blue-2: $blue-2;
+  blue-3: $blue-3;
+  blue-4: $blue-4;
+  blue-5: $blue-5;
+
+  /* Green */
+  green-1: $green-1;
+  green-2: $green-2;
+  green-3: $green-3;
+  green-4: $green-4;
+  green-5: $green-5;
+
+  /* Pink */
+  pink-1: $pink-1;
+  pink-2: $pink-2;
+  pink-3: $pink-3;
+  pink-4: $pink-4;
+  pink-5: $pink-5;
+
+  /* Key */
+  key-1: $key-1;
+  key-2: $key-2;
+  key-3: $key-3;
+  key-4: $key-4;
+
+  /* Financial Data Summary */
+  summary-1: $summary-1;
+  summary-2: $summary-2;
+  summary-3: $summary-3;
+
+  /* Gradiations */
+  grad-00: $grad-00;
+  grad-01: $grad-01;
+  grad-02: $grad-02;
+  grad-03: $grad-03;
+  grad-04: $grad-04;
+  grad-05: $grad-05;
+  grad-10: $grad-10;
+  grad-11: $grad-11;
+  grad-12: $grad-12;
+  grad-13: $grad-13;
+  grad-14: $grad-14;
+  grad-15: $grad-15;
+  grad-20: $grad-20;
+  grad-21: $grad-21;
+  grad-22: $grad-22;
+  grad-23: $grad-23;
+  grad-24: $grad-24;
+  grad-25: $grad-25;
+  grad-30: $grad-30;
+  grad-31: $grad-31;
+  grad-32: $grad-32;
+  grad-33: $grad-33;
+  grad-34: $grad-34;
+  grad-35: $grad-35;
+  grad-40: $grad-40;
+  grad-41: $grad-41;
+  grad-42: $grad-42;
+  grad-43: $grad-43;
+  grad-44: $grad-44;
+  grad-45: $grad-45;
+
+  /* Spot */
+  spot-0: $spot-0;
+  spot-1: $spot-1;
+  spot-2: $spot-2;
+  spot-3: $spot-3;
+  spot-4: $spot-4;
+  spot-5: $spot-5;
+  spot-6: $spot-6;
+  spot-7: $spot-7;
+  spot-8: $spot-8;
+  spot-9: $spot-9;
+  spot-10: $spot-10;
+  spot-11: $spot-11;
+}

@@ -1,0 +1,142 @@
+@import '../../.global-styles/global.scss';
+
+.button {
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &-label {
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+}
+
+.size {
+  &-normal {
+    min-width: 190px;
+    height: 50px;
+
+    .icon-size {
+      padding-right: 10px;
+      > svg {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-small {
+    min-width: 100px;
+    height: 36px;
+
+    .icon-size {
+      padding: 4px 8px 0 0;
+      > svg {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-smaller {
+    min-width: 55px;
+    height: 18px;
+
+    .icon-size {
+      padding-right: 5px;
+      > svg {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.color-set {
+  &-normal {
+    background-color: $primary;
+
+    .icon-color {
+      > svg {
+        color: $white;
+      }
+    }
+
+    &:hover {
+      background-color: $primary-1;
+    }
+
+    &.disabled {
+      background-color: $bg-2;
+
+      .icon-color {
+        > svg {
+          color: $gray-1;
+        }
+      }
+    }
+  }
+
+  &-alert {
+    background-color: $alert-1;
+
+    &:hover {
+      opacity: 75%;
+    }
+
+    &.disabled {
+      background-color: $bg-2;
+    }
+  }
+
+  &-gray {
+    background-color: $bg-2;
+
+    &:hover,
+    &.disabled {
+      background-color: transparent;
+    }
+  }
+
+  &-white {
+    background-color: $white;
+    border: 1px solid $bg-1;
+
+    .icon-color > svg {
+      color: $primary;
+    }
+
+    .icon-color {
+      > svg {
+        color: $primary;
+      }
+      &.icon-hovered > svg {
+        color: $primary-1;
+      }
+    }
+  }
+
+  &-none {
+    background-color: transparent;
+
+    .icon-color {
+      > svg {
+        color: $gray-1;
+      }
+      &.icon-hovered > svg {
+        color: $primary;
+      }
+    }
+
+    .icon-color-disabled {
+      > svg {
+        color: $gray-3;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../.global-styles/global.scss';
+
+:root {
+  --bg-color: black;
+}
+
+.line-graph {
+  text-align: right;
+}
+
+.stepper {
+  padding-bottom: 10px;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legend-wrapper {
+  padding: 0 5px;
+  background-color: $bg-3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  span {
+    padding: 5px;
+    margin: 0 5px 0 2px;
+    background-color: var(--bg-color);
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  position: relative;
+  &::after {
+    content: '';
+    width: 16.5px;
+    height: 2.5px;
+    background-color: var(--bg-color);
+    position: absolute;
+    left: -3px;
+    top: 4px;
+  }
+}
+
+.tips {
+  padding-top: 10px;
+}

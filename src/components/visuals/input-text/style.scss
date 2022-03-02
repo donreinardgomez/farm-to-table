@@ -1,0 +1,117 @@
+@import '../../.global-styles/global.scss';
+
+.input {
+  font-family: $main-font;
+  outline: none;
+  appearance: none;
+  border: 0;
+  flex-grow: 2;
+  width: 100%;
+
+  &-container {
+    border: solid 1px $bg-1;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+
+    &.has-decoration {
+      padding-left: 40px;
+    }
+
+    &.primary {
+      background-color: $white;
+    }
+
+    &.secondary {
+      background-color: $gray-1;
+    }
+
+    &.text,
+    &.password {
+      height: 46px;
+      line-height: 46px;
+    }
+
+    &.fit {
+      display: inline-flex;
+    }
+
+    &.full {
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+
+.textarea-wrapper {
+  border: solid 1px $bg-1;
+  border-radius: 8px;
+  background-color: $white;
+
+  &.disabled {
+    background-color: $bg-2;
+  }
+
+  .textarea {
+    font-family: $main-font;
+    font-size: 14px;
+    outline: none;
+    appearance: none;
+    padding: 20px 0 0 10px;
+    box-sizing: border-box;
+    min-height: 150px;
+    line-height: 1.6;
+    resize: none;
+    border: none;
+    border-radius: 8px;
+
+    &.primary {
+      background-color: $white;
+    }
+
+    &.secondary {
+      background-color: $gray-1;
+    }
+
+    &.fit {
+      display: inline-block;
+    }
+
+    &.full {
+      width: 100%;
+    }
+  }
+
+  .text-count {
+    margin-left: auto;
+    display: block;
+    max-width: 100px;
+    text-align: right;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+.label {
+  padding-bottom: 5px;
+}
+
+.decoration {
+  position: absolute;
+  padding: 12px 0 0 10px;
+}
+
+.visibility-toggle {
+  width: 24px;
+  height: 27px;
+  cursor: pointer;
+  color: $gray-3;
+  display: flex;
+  align-items: center;
+}
+
+.disabled {
+  background-color: $bg-2 !important;
+  color: $gray-3;
+}
