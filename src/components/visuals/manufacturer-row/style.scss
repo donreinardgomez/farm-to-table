@@ -26,6 +26,7 @@
 }
 
 .feedback {
+  background-color: $white;
   border-top: 1px solid $gray-5;
   padding: 10px;
 
@@ -70,7 +71,7 @@
   &-rank {
     width: 11px;
     height: 11px;
-    border: 1px solid $gray-2;
+    border: 1px solid $gray-3;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -83,4 +84,8 @@
     color: $yellow-3;
     font-size: 45px !important;
   }
+}
+
+.pad-bottom {
+  padding-bottom: 5px;
 }

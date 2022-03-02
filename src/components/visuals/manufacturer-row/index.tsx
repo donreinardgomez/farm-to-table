@@ -20,7 +20,7 @@ export const ManufacturerRow: React.FC<Props> = ({ manufacturer, className, type
     return (
       <div className={styles.trophy}>
         <EmojiEventsRounded className={styles.trophyIcon} />
-        <TextDisplay color='gray-2' className={styles.trophyRank} weight='bold' size='x-small'>
+        <TextDisplay color='gray-3' className={styles.trophyRank} weight='bold' size='x-small'>
           {manufacturer.ranking}
         </TextDisplay>
       </div>
@@ -45,7 +45,14 @@ export const ManufacturerRow: React.FC<Props> = ({ manufacturer, className, type
       </div>
       {isFeedbackVisible && (
         <div className={styles.feedback}>
-          <div dangerouslySetInnerHTML={{ __html: manufacturer.aiFeedback }} />
+          <TextDisplay size='large' weight='bold'>
+            Company Overview
+          </TextDisplay>
+          <TextDisplay className={styles.padBottom}>{manufacturer.overview}</TextDisplay>
+          <TextDisplay size='large' weight='bold'>
+            Review (AI Generated)
+          </TextDisplay>
+          <TextDisplay>{manufacturer.aiFeedback}</TextDisplay>
         </div>
       )}
     </div>

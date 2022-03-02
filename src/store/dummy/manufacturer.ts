@@ -21,6 +21,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 1,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 2',
@@ -29,6 +30,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 3',
@@ -38,6 +40,7 @@ export const dummyManufacturers: IManufacturer[] = [
     ranking: 1,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 4',
@@ -46,6 +49,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 5',
@@ -55,6 +59,7 @@ export const dummyManufacturers: IManufacturer[] = [
     ranking: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 6',
@@ -63,6 +68,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 7',
@@ -71,6 +77,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 8',
@@ -79,6 +86,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 9',
@@ -88,6 +96,7 @@ export const dummyManufacturers: IManufacturer[] = [
     ranking: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 10',
@@ -96,6 +105,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 11',
@@ -104,6 +114,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 12',
@@ -112,6 +123,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 1,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 13',
@@ -120,6 +132,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 14',
@@ -128,6 +141,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 15',
@@ -136,6 +150,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 16',
@@ -144,6 +159,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 1,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 17',
@@ -152,6 +168,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 18',
@@ -160,6 +177,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 19',
@@ -168,6 +186,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 20',
@@ -176,6 +195,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 1,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 21',
@@ -184,6 +204,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 1,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 22',
@@ -192,6 +213,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 23',
@@ -200,6 +222,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 24',
@@ -208,6 +231,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 25',
@@ -216,6 +240,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 26',
@@ -224,6 +249,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 27',
@@ -232,6 +258,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 28',
@@ -240,6 +267,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 29',
@@ -248,6 +276,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 30',
@@ -256,6 +285,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 31',
@@ -264,6 +294,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 32',
@@ -272,6 +303,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 33',
@@ -280,6 +312,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 34',
@@ -288,6 +321,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 35',
@@ -296,6 +330,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 36',
@@ -304,6 +339,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 37',
@@ -312,6 +348,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 38',
@@ -320,6 +357,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 39',
@@ -328,6 +366,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 40',
@@ -336,6 +375,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 41',
@@ -344,6 +384,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 42',
@@ -352,6 +393,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 43',
@@ -360,6 +402,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 1,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 44',
@@ -368,6 +411,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 45',
@@ -376,6 +420,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 3,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 46',
@@ -384,6 +429,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 47',
@@ -392,6 +438,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 48',
@@ -400,6 +447,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 4,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 49',
@@ -408,6 +456,7 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 5,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
     name: 'Manufacturing Company 50',
@@ -416,5 +465,6 @@ export const dummyManufacturers: IManufacturer[] = [
     rating: 2,
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
+    overview: loremClass.generateParagraphs(getRandom(2)),
   },
 ];
