@@ -1,19 +1,25 @@
 # farm to table demo
 
+### NVM (If you havent installed it yet)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
 ### Setup
 
 ```bash
-  yarn install
+  npm i
 ```
 
 #### Start
 
 ```bash
-  yarn start
+  npm start
 ```
 
 #### Build
 
 ```bash
-  yarn build
+  npm build
 ```
