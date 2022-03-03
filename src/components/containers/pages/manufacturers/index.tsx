@@ -7,6 +7,7 @@ import { isEven } from '@utils/is-even';
 import { ManufacturerRow } from '@visuals/manufacturer-row';
 import React from 'react';
 import { connect } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import { compose } from 'redux';
 import styles from './style.scss';
 
@@ -15,6 +16,7 @@ const ManufacturersFC: React.FC<Props> = ({
     data: { manufacturers },
   },
 }) => {
+  const history = useHistory();
   return (
     <div className={styles.table}>
       {manufacturers.map((manufacturer, i) => (
@@ -23,6 +25,7 @@ const ManufacturersFC: React.FC<Props> = ({
           type={isEven(i + 1) ? 'even' : 'odd'}
           key={i}
           manufacturer={manufacturer}
+          onNameClick={() => history.push(`/manufacturer/${manufacturer.id}`)}
         />
       ))}
     </div>

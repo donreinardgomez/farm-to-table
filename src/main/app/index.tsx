@@ -11,10 +11,10 @@ export function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
-          <Route path={'/test'} component={Test} />
-          <Route path={'/'} component={Dashboard} />
-          <Route path={'/dashboard'} component={Dashboard} />
-          <Route path={'/app'} component={ConsumerApp} />
+          <Route exact path={'/test'} component={Test} />
+          <Route exact path={'/app'} component={ConsumerApp} />
+          <Route exact path={'/dashboard'} component={Dashboard} />
+          <Route exact component={Dashboard} />
         </Switch>
       </BrowserRouter>
     </Provider>

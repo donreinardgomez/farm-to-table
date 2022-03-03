@@ -3,10 +3,10 @@ import { Header } from '@visuals/header';
 import React from 'react';
 import styles from './style.scss';
 
-export const PageContainer: React.FC<Props> = ({ children, mode }) => {
+export const PageContainer: React.FC<Props> = ({ children, onLogoClick, mode }) => {
   return (
     <div className={styles.pageContainer}>
-      <Header mode={mode} />
+      <Header onLogoClick={onLogoClick} mode={mode} />
       {children}
     </div>
   );
@@ -21,6 +21,7 @@ export type Props = IStateProps & IDispatchProps;
 interface IStateProps {
   children: React.ReactNode;
   mode?: TPageType;
+  onLogoClick?: () => void;
 }
 
 interface IDispatchProps {}

@@ -1,6 +1,7 @@
 import { IItem } from './item';
 
 export interface IManufacturer {
+  id: number;
   name: string;
   overview: string;
   industry: string;

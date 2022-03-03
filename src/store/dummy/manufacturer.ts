@@ -15,6 +15,7 @@ const loremClass = new LoremIpsum({
 
 export const dummyManufacturers: IManufacturer[] = [
   {
+    id: 1,
     name: 'Manufacturing Company 1',
     industry: 'Electrical Equipment, Appliances & Components',
     address: '123 Fake Street Fake Road Fake Country 1',
@@ -24,6 +25,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 2,
     name: 'Manufacturing Company 2',
     industry: 'Textile Mills',
     address: '123 Fake Street Fake Road Fake Country 2',
@@ -33,6 +35,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 3,
     name: 'Manufacturing Company 3',
     industry: 'Furniture & Related Products',
     address: '123 Fake Street Fake Road Fake Country 3',
@@ -43,6 +46,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 4,
     name: 'Manufacturing Company 4',
     industry: 'Machinery',
     address: '123 Fake Street Fake Road Fake Country 4',
@@ -52,6 +56,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 5,
     name: 'Manufacturing Company 5',
     industry: 'Fabricated Metal Products',
     address: '123 Fake Street Fake Road Fake Country 5',
@@ -62,6 +67,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 6,
     name: 'Manufacturing Company 6',
     industry: 'Primary Metals',
     address: '123 Fake Street Fake Road Fake Country 6',
@@ -71,6 +77,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 7,
     name: 'Manufacturing Company 7',
     industry: 'Miscellaneous Manufacturing',
     address: '123 Fake Street Fake Road Fake Country 7',
@@ -80,6 +87,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 8,
     name: 'Manufacturing Company 8',
     industry: 'Chemical Products',
     address: '123 Fake Street Fake Road Fake Country 8',
@@ -89,6 +97,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 9,
     name: 'Manufacturing Company 9',
     industry: 'Plastics & Rubber Products',
     address: '123 Fake Street Fake Road Fake Country 9',
@@ -99,6 +108,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 10,
     name: 'Manufacturing Company 10',
     industry: 'Food, Beverage',
     address: '123 Fake Street Fake Road Fake Country 10',
@@ -108,6 +118,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 11,
     name: 'Manufacturing Company 11',
     industry: 'Electrical Equipment, Appliances & Components',
     address: '123 Fake Street Fake Road Fake Country 11',
@@ -117,6 +128,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 12,
     name: 'Manufacturing Company 12',
     industry: 'Textile Mills',
     address: '123 Fake Street Fake Road Fake Country 12',
@@ -126,6 +138,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 13,
     name: 'Manufacturing Company 13',
     industry: 'Furniture & Related Products',
     address: '123 Fake Street Fake Road Fake Country 13',
@@ -135,6 +148,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 14,
     name: 'Manufacturing Company 14',
     industry: 'Machinery',
     address: '123 Fake Street Fake Road Fake Country 14',
@@ -144,6 +158,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 15,
     name: 'Manufacturing Company 15',
     industry: 'Fabricated Metal Products',
     address: '123 Fake Street Fake Road Fake Country 15',
@@ -153,6 +168,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 16,
     name: 'Manufacturing Company 16',
     industry: 'Primary Metals',
     address: '123 Fake Street Fake Road Fake Country 16',
@@ -162,6 +178,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 17,
     name: 'Manufacturing Company 17',
     industry: 'Miscellaneous Manufacturing',
     address: '123 Fake Street Fake Road Fake Country 17',
@@ -171,6 +188,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 18,
     name: 'Manufacturing Company 18',
     industry: 'Chemical Products',
     address: '123 Fake Street Fake Road Fake Country 18',
@@ -180,6 +198,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 19,
     name: 'Manufacturing Company 19',
     industry: 'Plastics & Rubber Products',
     address: '123 Fake Street Fake Road Fake Country 19',
@@ -189,6 +208,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 20,
     name: 'Manufacturing Company 20',
     industry: 'Food, Beverage',
     address: '123 Fake Street Fake Road Fake Country 20',
@@ -198,6 +218,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 21,
     name: 'Manufacturing Company 21',
     industry: 'Electrical Equipment, Appliances & Components',
     address: '123 Fake Street Fake Road Fake Country 21',
@@ -207,6 +228,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 22,
     name: 'Manufacturing Company 22',
     industry: 'Textile Mills',
     address: '123 Fake Street Fake Road Fake Country 22',
@@ -216,6 +238,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 23,
     name: 'Manufacturing Company 23',
     industry: 'Furniture & Related Products',
     address: '123 Fake Street Fake Road Fake Country 23',
@@ -225,6 +248,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 24,
     name: 'Manufacturing Company 24',
     industry: 'Machinery',
     address: '123 Fake Street Fake Road Fake Country 24',
@@ -234,6 +258,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 25,
     name: 'Manufacturing Company 25',
     industry: 'Fabricated Metal Products',
     address: '123 Fake Street Fake Road Fake Country 25',
@@ -243,6 +268,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 26,
     name: 'Manufacturing Company 26',
     industry: 'Primary Metals',
     address: '123 Fake Street Fake Road Fake Country 26',
@@ -252,6 +278,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 27,
     name: 'Manufacturing Company 27',
     industry: 'Miscellaneous Manufacturing',
     address: '123 Fake Street Fake Road Fake Country 27',
@@ -261,6 +288,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 28,
     name: 'Manufacturing Company 28',
     industry: 'Chemical Products',
     address: '123 Fake Street Fake Road Fake Country 28',
@@ -270,6 +298,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 29,
     name: 'Manufacturing Company 29',
     industry: 'Plastics & Rubber Products',
     address: '123 Fake Street Fake Road Fake Country 29',
@@ -279,6 +308,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 30,
     name: 'Manufacturing Company 30',
     industry: 'Food, Beverage',
     address: '123 Fake Street Fake Road Fake Country 30',
@@ -288,6 +318,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 31,
     name: 'Manufacturing Company 31',
     industry: 'Electrical Equipment, Appliances & Components',
     address: '123 Fake Street Fake Road Fake Country 31',
@@ -297,6 +328,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 32,
     name: 'Manufacturing Company 32',
     industry: 'Textile Mills',
     address: '123 Fake Street Fake Road Fake Country 32',
@@ -306,6 +338,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 33,
     name: 'Manufacturing Company 33',
     industry: 'Furniture & Related Products',
     address: '123 Fake Street Fake Road Fake Country 33',
@@ -315,6 +348,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 34,
     name: 'Manufacturing Company 34',
     industry: 'Machinery',
     address: '123 Fake Street Fake Road Fake Country 34',
@@ -324,6 +358,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 35,
     name: 'Manufacturing Company 35',
     industry: 'Fabricated Metal Products',
     address: '123 Fake Street Fake Road Fake Country 35',
@@ -333,6 +368,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 36,
     name: 'Manufacturing Company 36',
     industry: 'Primary Metals',
     address: '123 Fake Street Fake Road Fake Country 36',
@@ -342,6 +378,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 37,
     name: 'Manufacturing Company 37',
     industry: 'Miscellaneous Manufacturing',
     address: '123 Fake Street Fake Road Fake Country 37',
@@ -351,6 +388,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 38,
     name: 'Manufacturing Company 38',
     industry: 'Chemical Products',
     address: '123 Fake Street Fake Road Fake Country 38',
@@ -360,6 +398,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 39,
     name: 'Manufacturing Company 39',
     industry: 'Plastics & Rubber Products',
     address: '123 Fake Street Fake Road Fake Country 39',
@@ -369,6 +408,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 40,
     name: 'Manufacturing Company 40',
     industry: 'Food, Beverage',
     address: '123 Fake Street Fake Road Fake Country 40',
@@ -378,6 +418,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 41,
     name: 'Manufacturing Company 41',
     industry: 'Electrical Equipment, Appliances & Components',
     address: '123 Fake Street Fake Road Fake Country 41',
@@ -387,6 +428,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 42,
     name: 'Manufacturing Company 42',
     industry: 'Textile Mills',
     address: '123 Fake Street Fake Road Fake Country 42',
@@ -396,6 +438,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 43,
     name: 'Manufacturing Company 43',
     industry: 'Furniture & Related Products',
     address: '123 Fake Street Fake Road Fake Country 43',
@@ -405,6 +448,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 44,
     name: 'Manufacturing Company 44',
     industry: 'Machinery',
     address: '123 Fake Street Fake Road Fake Country 44',
@@ -414,6 +458,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 45,
     name: 'Manufacturing Company 45',
     industry: 'Fabricated Metal Products',
     address: '123 Fake Street Fake Road Fake Country 45',
@@ -423,6 +468,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 46,
     name: 'Manufacturing Company 46',
     industry: 'Primary Metals',
     address: '123 Fake Street Fake Road Fake Country 46',
@@ -432,6 +478,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 47,
     name: 'Manufacturing Company 47',
     industry: 'Miscellaneous Manufacturing',
     address: '123 Fake Street Fake Road Fake Country 47',
@@ -441,6 +488,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 48,
     name: 'Manufacturing Company 48',
     industry: 'Chemical Products',
     address: '123 Fake Street Fake Road Fake Country 48',
@@ -450,6 +498,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 49,
     name: 'Manufacturing Company 49',
     industry: 'Plastics & Rubber Products',
     address: '123 Fake Street Fake Road Fake Country 49',
@@ -459,6 +508,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
   },
   {
+    id: 50,
     name: 'Manufacturing Company 50',
     industry: 'Food, Beverage',
     address: '123 Fake Street Fake Road Fake Country 50',
