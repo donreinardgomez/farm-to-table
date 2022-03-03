@@ -2,6 +2,7 @@
 
 .container {
   height: 100vh;
+  width: 100vw;
 }
 
 .avatar {
@@ -18,7 +19,8 @@
 }
 
 .mood {
-  font-size: 60px !important ;
+  font-size: 60px !important;
+  cursor: pointer;
 
   &-container {
     width: 270px;
