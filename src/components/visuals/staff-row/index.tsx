@@ -15,15 +15,15 @@ export const StaffRow: React.FC<Props> = ({ staff, className, type, onNameClick 
   const renderMood = () => {
     switch (staff.moodRating) {
       case 'happy':
-        return <Mood />;
+        return <Mood className={`${styles.emoji} ${styles.emojiHappy}`} />;
       case 'angry':
-        return <MoodBad />;
+        return <MoodBad className={`${styles.emoji} ${styles.emojiAngry}`} />;
       case 'stressed':
-        return <Face />;
+        return <Face className={`${styles.emoji} ${styles.emojiStressed}`} />;
       case 'normal':
-        return <SentimentSatisfied />;
+        return <SentimentSatisfied className={`${styles.emoji} ${styles.emojiNormal}`} />;
       case 'sad':
-        return <SentimentDissatisfiedOutlined />;
+        return <SentimentDissatisfiedOutlined className={`${styles.emoji} ${styles.emojiSad}`} />;
     }
   };
 

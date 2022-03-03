@@ -33,3 +33,27 @@
   border: 5px solid $gray-3;
   margin-right: 10px;
 }
+
+.emoji {
+  font-size: 36px !important;
+
+  &-happy {
+    color: $ey-yellow;
+  }
+
+  &-angry {
+    color: $alert-1;
+  }
+
+  &-stressed {
+    color: $alert-2;
+  }
+
+  &-normal {
+    color: $blue-1;
+  }
+
+  &-sad {
+    color: $navy-1;
+  }
+}
