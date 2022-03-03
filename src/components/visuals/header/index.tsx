@@ -7,7 +7,7 @@ import styles from './style.scss';
 export const Header: React.FC<Props> = ({ onLogoClick, onBurgerClick }) => {
   return (
     <div className={`${styles.header} ${onLogoClick && styles.clickable}`}>
-      <Logo onClick={onLogoClick} className={styles.logo} type='logo-header-mono' />
+      <Logo onClick={onLogoClick} className={styles.logo} type='logo-header' />
       {onBurgerClick && <Menu onClick={onBurgerClick} className={styles.burger} />}
     </div>
   );

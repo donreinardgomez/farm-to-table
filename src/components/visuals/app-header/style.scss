@@ -14,11 +14,12 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4px;
 }
 
 .logo {
-  width: 200px;
-  height: 44px;
+  width: 212px;
+  height: 56px;
 }
 
 .leaf {
@@ -48,7 +49,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 44px;
   }
 }
 
@@ -63,19 +64,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .camera {
   color: $gray-2;
   margin: 10px;
-  font-size: 30px !important;
+  font-size: 40px !important;
   cursor: pointer;
 }
 
 .settings {
   color: $gray-4;
   margin: 10px;
-  font-size: 30px !important;
+  font-size: 40px !important;
   cursor: pointer;
 }
