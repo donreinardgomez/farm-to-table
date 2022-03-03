@@ -14,7 +14,6 @@ const ConsumerAppFC: React.FC<Props> = ({
   state: {
     ui: { isMenuOn, displayConsumer, isAppHeaderSimple },
   },
-  toggleMenu,
   setAppHeaderSimple,
 }) => {
   const history = useHistory();
@@ -45,7 +44,7 @@ const ConsumerAppFC: React.FC<Props> = ({
         isSimple={isAppHeaderSimple}
         consumer={displayConsumer}
         onCameraClick={handleCameraClick}
-        onBurgerClick={toggleMenu}
+        onBurgerClick={() => history.push('/')}
         onLogoClick={handleLogoClick}
       />
       <Switch>
