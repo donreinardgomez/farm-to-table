@@ -67,8 +67,15 @@
 }
 
 .camera {
-  color: $gray-3;
+  color: $gray-2;
   margin: 10px;
-  font-size: 50px !important;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+.settings {
+  color: $gray-4;
+  margin: 10px;
+  font-size: 30px !important;
   cursor: pointer;
 }

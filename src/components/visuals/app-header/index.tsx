@@ -23,7 +23,7 @@ export const AppHeader: React.FC<Props> = ({
           <Logo className={styles.avatar} type={consumer?.avatar} />
           <div className={styles.topHalf}>
             <Camera onClick={onCameraClick} className={styles.camera} />
-            <Settings className={styles.camera} />
+            <Settings className={styles.settings} />
           </div>
           <div className={styles.bottomHalf}>
             <div className={styles.bottomHalfContent}>
