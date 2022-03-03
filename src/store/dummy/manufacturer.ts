@@ -1,7 +1,13 @@
 import { IManufacturer } from '@models/manufacturer';
 import { getRandom } from '@utils/get-random';
 import { LoremIpsum } from 'lorem-ipsum';
-import { dummyItemsForManufacturer1 } from './items';
+import {
+  dummyItemsForManufacturer1,
+  dummyItemsForManufacturer2,
+  dummyItemsForManufacturer3,
+  dummyItemsForManufacturer4,
+  dummyItemsForManufacturer5,
+} from './items';
 
 const loremClass = new LoremIpsum({
   sentencesPerParagraph: {
@@ -24,8 +30,8 @@ export const dummyManufacturers: IManufacturer[] = [
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
     overview: loremClass.generateParagraphs(getRandom(2)),
-    awards: 'Lifetime award',
-    homepage: 'https://fgfg.yy.com',
+    awards: 'MonteReel 1999',
+    homepage: 'https://oganic.fruits.com',
     items: [...dummyItemsForManufacturer1],
   },
   {
@@ -37,6 +43,9 @@ export const dummyManufacturers: IManufacturer[] = [
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
     overview: loremClass.generateParagraphs(getRandom(2)),
+    awards: 'MonteReel 2020',
+    homepage: 'https://tuna.global.com',
+    items: [...dummyItemsForManufacturer2],
   },
   {
     id: 3,
@@ -48,6 +57,9 @@ export const dummyManufacturers: IManufacturer[] = [
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
     overview: loremClass.generateParagraphs(getRandom(2)),
+    awards: 'MonteReel 2000',
+    homepage: 'https://frozen.meats.com',
+    items: [...dummyItemsForManufacturer3],
   },
   {
     id: 4,
@@ -58,6 +70,9 @@ export const dummyManufacturers: IManufacturer[] = [
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
     overview: loremClass.generateParagraphs(getRandom(2)),
+    awards: 'MonteReel 2010',
+    homepage: 'https://wa-nyu.alljapan.com',
+    items: [...dummyItemsForManufacturer4],
   },
   {
     id: 5,
@@ -69,6 +84,9 @@ export const dummyManufacturers: IManufacturer[] = [
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
     overview: loremClass.generateParagraphs(getRandom(2)),
+    awards: 'MonteReel 1930',
+    homepage: 'https://mongo.alljapan.com',
+    items: [...dummyItemsForManufacturer5],
   },
   {
     id: 6,
