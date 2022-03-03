@@ -15,3 +15,16 @@
     justify-content: center;
   }
 }
+
+.contents {
+  flex-grow: 1;
+  &-container {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  &-menu {
+    width: 200px;
+  }
+}

@@ -1,8 +1,6 @@
-import { setConsumers, setManufacturers } from '@actions/data';
-import { setDisplayConsumer, setDisplayManufacturer } from '@actions/ui';
-import { IConsumer } from '@models/consumer';
-import { IManufacturer } from '@models/manufacturer';
+import { toggleMenu } from '@actions/ui';
 import { IStore } from '@models/store';
+import { dummyMenuItems } from '@store/dummy/menu-items';
 import { PageContainer } from '@visuals/page-container';
 import React from 'react';
 import { connect } from 'react-redux';
@@ -12,11 +10,21 @@ import { compose } from 'redux';
 import { ManufacturerPage } from '../manufacturer-page';
 import { Manufacturers } from '../manufacturers';
 
-const DashboardFC: React.FC<Props> = () => {
+const DashboardFC: React.FC<Props> = ({
+  state: {
+    ui: { isMenuOn },
+  },
+  toggleMenu,
+}) => {
   const history = useHistory();
 
   return (
-    <PageContainer onLogoClick={() => history.push('/')}>
+    <PageContainer
+      onBurgerClick={toggleMenu}
+      isMenuOn={isMenuOn}
+      onLogoClick={() => history.push('/')}
+      menuItems={dummyMenuItems}
+    >
       <Switch>
         <Route exact path='/' render={() => <Redirect to={'/home'} />} />
         <Route exact path={'/manufacturer/:id'} component={ManufacturerPage} />
@@ -33,10 +41,7 @@ interface IStateProps {
 }
 
 interface IDispatchProps {
-  setConsumers: (consumers: IConsumer[]) => void;
-  setManufacturers: (manufacturers: IManufacturer[]) => void;
-  setDisplayConsumer: (consumer: IConsumer) => void;
-  setDisplayManufacturer: (manufacturer: IManufacturer) => void;
+  toggleMenu: () => void;
 }
 
 const mapStateToProps = (state: IStore): Partial<IStateProps> => ({
@@ -44,10 +49,7 @@ const mapStateToProps = (state: IStore): Partial<IStateProps> => ({
 });
 
 const mapDispatchToProps: IDispatchProps = {
-  setConsumers,
-  setManufacturers,
-  setDisplayConsumer,
-  setDisplayManufacturer,
+  toggleMenu,
 };
 
 export const Dashboard = compose(connect(mapStateToProps, mapDispatchToProps))(DashboardFC);

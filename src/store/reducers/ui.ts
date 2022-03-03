@@ -5,6 +5,7 @@ import { updateObject } from '@utils/update-object';
 const initialState: IUi = {
   displayConsumer: null,
   displayManufacturer: null,
+  isMenuOn: false,
 };
 
 export function ui(state: IUi = initialState, action: AllAction) {
@@ -16,6 +17,10 @@ export function ui(state: IUi = initialState, action: AllAction) {
     case 'SET_DISPLAY_MANUFACTURER':
       return updateObject(state, {
         displayConsumer: state.displayConsumer,
+      });
+    case 'TOGGLE_MENU':
+      return updateObject(state, {
+        isMenuOn: !state.isMenuOn,
       });
     default:
       return state;

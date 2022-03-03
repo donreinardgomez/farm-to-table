@@ -24,4 +24,12 @@ export const setDisplayManufacturer = (
   type: 'SET_DISPLAY_MANUFACTURER',
 });
 
-export type UiActions = ActionSetDisplayConsumer | ActionSetDisplayManufacturer;
+interface ActionToggleMenu extends Action {
+  type: 'TOGGLE_MENU';
+}
+
+export const toggleMenu = (): ActionToggleMenu => ({
+  type: 'TOGGLE_MENU',
+});
+
+export type UiActions = ActionSetDisplayConsumer | ActionSetDisplayManufacturer | ActionToggleMenu;

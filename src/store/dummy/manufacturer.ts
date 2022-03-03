@@ -1,6 +1,7 @@
 import { IManufacturer } from '@models/manufacturer';
 import { getRandom } from '@utils/get-random';
 import { LoremIpsum } from 'lorem-ipsum';
+import { dummyItemsForManufacturer1 } from './items';
 
 const loremClass = new LoremIpsum({
   sentencesPerParagraph: {
@@ -25,6 +26,7 @@ export const dummyManufacturers: IManufacturer[] = [
     overview: loremClass.generateParagraphs(getRandom(2)),
     awards: 'Lifetime award',
     homepage: 'https://fgfg.yy.com',
+    items: [...dummyItemsForManufacturer1],
   },
   {
     id: 2,
