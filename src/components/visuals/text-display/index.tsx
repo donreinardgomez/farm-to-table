@@ -120,7 +120,13 @@ export type TColors =
   | 'alert'
   | 'summary-1'
   | 'summary-2'
-  | 'summary-3';
+  | 'summary-3'
+  | 'green-1'
+  | 'green-2'
+  | 'green-3'
+  | 'green-4'
+  | 'green-5'
+  | 'green-6';
 
 interface State {
   isHovered?: boolean;

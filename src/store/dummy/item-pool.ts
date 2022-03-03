@@ -38,6 +38,7 @@ export const generateDummyItem = (manufacturerId?: number): IItem => {
       { name: `Manufacturer Company ${getRandomNumber(50)}` },
       { name: 'Super Store' },
     ],
+    price: getRandomNumber(100000),
     originCountry: lorem.generateWords(1),
   };
 };

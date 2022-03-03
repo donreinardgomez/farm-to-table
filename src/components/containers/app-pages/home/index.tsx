@@ -16,7 +16,7 @@ const AppHomeFC: React.FC<Props> = ({
     ui: { displayConsumer },
   },
 }) => {
-  const renderPurchaseHistory = () => {
+  const renderItemList = () => {
     const displayItems = generateDummyPurchasedItems(20, displayConsumer?.id);
     if (!isOk(displayItems)) return;
 
@@ -24,14 +24,16 @@ const AppHomeFC: React.FC<Props> = ({
       const targetItem: IItem =
         dataItems.find((it) => it.id === item?.itemId) || generateDummyItem();
       if (!isOk(targetItem)) return;
-      return <ItemCard key={hash(i)} item={targetItem} />;
+      return <ItemCard className={styles.scrollerItem} key={hash(i)} item={targetItem} />;
     });
   };
 
   return (
     <div>
+      <AppSectionHeader>Recommendations</AppSectionHeader>
+      <div className={styles.scroller}>{renderItemList()}</div>
       <AppSectionHeader>Purchase history</AppSectionHeader>
-      <div className={styles.scroller}>{renderPurchaseHistory()}</div>
+      <div className={styles.scroller}>{renderItemList()}</div>
     </div>
   );
 };
