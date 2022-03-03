@@ -4,11 +4,13 @@ import { dummyConsumers } from '@store/dummy/consumers';
 import { generateDummyItems } from '@store/dummy/item-pool';
 import { dummyManufacturers } from '@store/dummy/manufacturer';
 import { generateDummyPurchasedItems } from '@store/dummy/purchased-items';
+import { dummyStaffs } from '@store/dummy/staffs';
 import { updateObject } from '@utils/update-object';
 
 const initialState: IData = {
   consumers: [...dummyConsumers],
   manufacturers: [...dummyManufacturers],
+  staffs: [...dummyStaffs],
   purchasedItems: generateDummyPurchasedItems(100),
   items: generateDummyItems(1000),
 };

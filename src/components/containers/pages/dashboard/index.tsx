@@ -9,6 +9,7 @@ import { Route, Switch } from 'react-router-dom';
 import { compose } from 'redux';
 import { ManufacturerPage } from '../manufacturer-page';
 import { Manufacturers } from '../manufacturers';
+import { Staffs } from '../staff-list';
 
 const DashboardFC: React.FC<Props> = ({
   state: {
@@ -18,7 +19,7 @@ const DashboardFC: React.FC<Props> = ({
 }) => {
   const history = useHistory();
   const { path } = useRouteMatch();
-
+  document.body.style.backgroundColor = '#1b1b1b';
   return (
     <PageContainer
       onBurgerClick={toggleMenu}
@@ -29,6 +30,7 @@ const DashboardFC: React.FC<Props> = ({
       <Switch>
         <Route exact path={path} component={Manufacturers} />
         <Route exact path={`${path}/manufacturer/:id`} component={ManufacturerPage} />
+        <Route exact path={`${path}/staff`} component={Staffs} />
       </Switch>
     </PageContainer>
   );

@@ -2,6 +2,7 @@ import { Spa } from '@material-ui/icons';
 import { IStore } from '@models/store';
 import { formatNumber } from '@utils/format-number';
 import { AppSectionHeader } from '@visuals/app-section-header';
+import { Logo } from '@visuals/logo';
 import { TextDisplay } from '@visuals/text-display';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
@@ -38,7 +39,12 @@ const ItemPageFC: React.FC<Props> = ({
           {formatNumber(item.greenPoint)} Green Points
         </TextDisplay>
       </div>
-      VIEW FARM
+      <div className={styles.viewfarmContainer}>
+        <button className={styles.viewfarmButton}>
+          <Logo className={(styles.image, styles.viewfarmIcon)} type='camera' />
+          VIEW FARM
+        </button>
+      </div>
       <AppSectionHeader
         hasToggle
         isCollapsed={isDecriptionCollapsed}
@@ -60,7 +66,14 @@ const ItemPageFC: React.FC<Props> = ({
       </AppSectionHeader>
       {isDistributionCollapsed && (
         <div className={styles.infoContainer}>
-          <TextDisplay>{JSON.stringify(item.distributionHistory)}</TextDisplay>
+          <TextDisplay>
+            <ol className={styles.workFlow}>
+              <li>{item.distributionHistory[0].name}</li>
+              <li>{item.distributionHistory[1].name}</li>
+              <li>{item.distributionHistory[2].name}</li>
+              <li>{item.distributionHistory[3].name}</li>
+            </ol>
+          </TextDisplay>
         </div>
       )}
     </div>

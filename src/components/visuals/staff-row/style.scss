@@ -1,0 +1,59 @@
+@import '../../global-styles/global.scss';
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.even {
+  background-color: $green-6;
+}
+
+.odd {
+  background-color: $white;
+}
+
+.name-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  margin-left: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid $gray-3;
+  margin-right: 10px;
+}
+
+.emoji {
+  font-size: 36px !important;
+
+  &-happy {
+    color: $ey-yellow;
+  }
+
+  &-angry {
+    color: $alert-1;
+  }
+
+  &-stressed {
+    color: $alert-2;
+  }
+
+  &-normal {
+    color: $blue-1;
+  }
+
+  &-sad {
+    color: $navy-1;
+  }
+}
