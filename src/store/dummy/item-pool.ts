@@ -14,7 +14,7 @@ const lorem = new LoremIpsum({
   },
 });
 
-export const getDummyItemPool = (total: number): IItem[] => {
+export const generateDummyItems = (total: number): IItem[] => {
   if (total <= 0) return [];
   const generatedItems: IItem[] = [];
   for (let i = 1; i <= total; i++) {

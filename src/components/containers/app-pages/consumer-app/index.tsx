@@ -2,14 +2,13 @@ import { toggleMenu } from '@actions/ui';
 import { IStore } from '@models/store';
 import { AppHeader } from '@visuals/app-header';
 import { PageContainer } from '@visuals/page-container';
-import { RandomPic } from '@visuals/random-pic';
-import { TextDisplay } from '@visuals/text-display';
 import React from 'react';
 import { connect } from 'react-redux';
-import { useHistory } from 'react-router';
-import { RouteComponentProps } from 'react-router-dom';
+import { useHistory, useRouteMatch } from 'react-router';
+import { Route, RouteComponentProps, Switch } from 'react-router-dom';
 import { compose } from 'redux';
-import styles from './style.scss';
+import { AppHome } from '../home';
+import { PurchasedItems } from '../purchased-items';
 
 const ConsumerAppFC: React.FC<Props> = ({
   state: {
@@ -19,13 +18,15 @@ const ConsumerAppFC: React.FC<Props> = ({
 }) => {
   const history = useHistory();
   document.body.style.backgroundColor = '#f5f7f9';
+  const { path } = useRouteMatch();
+
   return (
     <PageContainer mode='app' isMenuOn={isMenuOn} onLogoClick={() => history.push('/app')}>
       <AppHeader consumer={displayConsumer} onBurgerClick={toggleMenu} />
-      <TextDisplay color='white' className={styles.sectionHeader} weight='bold' size='large'>
-        Purchase History
-      </TextDisplay>
-      <RandomPic width={200} height={100} />
+      <Switch>
+        <Route exact path={path} component={AppHome} />
+        <Route path={`${path}/hist`} component={PurchasedItems} />
+      </Switch>
     </PageContainer>
   );
 };

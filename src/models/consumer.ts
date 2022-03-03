@@ -9,9 +9,9 @@ export interface IConsumer {
   address?: string;
   walletPoints?: number;
   attributes?: {
-    height?: string;
+    height?: number;
     weight?: number;
-    gender?: number;
+    gender?: 'male' | 'female';
     birthDate?: Date;
   };
   badge?: 'none' | 'bronze' | 'silver' | 'gold' | 'platinum';

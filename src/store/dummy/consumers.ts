@@ -11,6 +11,12 @@ export const dummyConsumers: IConsumer[] = [
     address: '123 Fake Streen, Fake Road, Fake City',
     phoneNmber: '+81-80-999-9999',
     avatar: 'avatar-mei',
+    attributes: {
+      birthDate: new Date('1990/01/01'),
+      gender: 'female',
+      height: 170,
+      weight: 70,
+    },
   },
   {
     id: 2,
@@ -22,6 +28,12 @@ export const dummyConsumers: IConsumer[] = [
     address: '456 Fake Streen, Fake Road, Fake City',
     phoneNmber: '+81-80-888-8888',
     avatar: 'avatar-don',
+    attributes: {
+      birthDate: new Date('1990/01/01'),
+      gender: 'female',
+      height: 170,
+      weight: 70,
+    },
   },
   {
     id: 3,
@@ -33,6 +45,12 @@ export const dummyConsumers: IConsumer[] = [
     address: '789 Fake Streen, Fake Road, Fake City',
     phoneNmber: '+81-80-777-7777',
     avatar: 'avatar-suto',
+    attributes: {
+      birthDate: new Date('1990/01/01'),
+      gender: 'female',
+      height: 170,
+      weight: 70,
+    },
   },
   {
     id: 4,
@@ -44,6 +62,12 @@ export const dummyConsumers: IConsumer[] = [
     address: '101 Fake Streen, Fake Road, Fake City',
     phoneNmber: '+81-80-666-6666',
     avatar: 'avatar-joe',
+    attributes: {
+      birthDate: new Date('1990/01/01'),
+      gender: 'female',
+      height: 170,
+      weight: 70,
+    },
   },
   {
     id: 5,
@@ -55,6 +79,12 @@ export const dummyConsumers: IConsumer[] = [
     address: '532 Fake Streen, Fake Road, Fake City',
     phoneNmber: '+81-80-555-5555',
     avatar: 'avatar-min',
+    attributes: {
+      birthDate: new Date('1990/01/01'),
+      gender: 'female',
+      height: 170,
+      weight: 70,
+    },
   },
   {
     id: 6,
@@ -66,5 +96,11 @@ export const dummyConsumers: IConsumer[] = [
     address: '3453 Fake Streen, Fake Road, Fake City',
     phoneNmber: '+81-80-444-4444',
     avatar: 'avatar-nakayama',
+    attributes: {
+      birthDate: new Date('1990/01/01'),
+      gender: 'female',
+      height: 170,
+      weight: 70,
+    },
   },
 ];

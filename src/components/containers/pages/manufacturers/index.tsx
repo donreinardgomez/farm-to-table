@@ -25,7 +25,7 @@ const ManufacturersFC: React.FC<Props> = ({
           type={isEven(i + 1) ? 'even' : 'odd'}
           key={i}
           manufacturer={manufacturer}
-          onNameClick={() => history.push(`/manufacturer/${manufacturer.id}`)}
+          onNameClick={() => history.push(`/biz/manufacturer/${manufacturer.id}`)}
         />
       ))}
     </div>

@@ -1,5 +1,4 @@
-import { ConsumerApp } from '@containers/pages/consumer-app';
-import { Dashboard } from '@containers/pages/dashboard';
+import { Layout } from '@containers/pages/layout';
 import { Test } from '@containers/pages/test';
 import { store } from '@store/index';
 import React from 'react';
@@ -12,9 +11,7 @@ export function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path={'/test'} component={Test} />
-          <Route exact path={'/app'} component={ConsumerApp} />
-          <Route exact path={'/dashboard'} component={Dashboard} />
-          <Route exact component={Dashboard} />
+          <Route exact component={Layout} />
         </Switch>
       </BrowserRouter>
     </Provider>

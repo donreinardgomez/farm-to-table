@@ -1,6 +1,5 @@
 export interface IPurchaseItem {
-  id: number;
-  itemId: number;
   consumerId: number;
+  itemId: number;
   purchaseDate: Date;
 }

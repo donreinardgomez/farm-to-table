@@ -4,8 +4,8 @@ import { dummyMenuItems } from '@store/dummy/menu-items';
 import { PageContainer } from '@visuals/page-container';
 import React from 'react';
 import { connect } from 'react-redux';
-import { useHistory } from 'react-router';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { useHistory, useRouteMatch } from 'react-router';
+import { Route, Switch } from 'react-router-dom';
 import { compose } from 'redux';
 import { ManufacturerPage } from '../manufacturer-page';
 import { Manufacturers } from '../manufacturers';
@@ -17,6 +17,7 @@ const DashboardFC: React.FC<Props> = ({
   toggleMenu,
 }) => {
   const history = useHistory();
+  const { path } = useRouteMatch();
 
   return (
     <PageContainer
@@ -26,9 +27,8 @@ const DashboardFC: React.FC<Props> = ({
       menuItems={dummyMenuItems}
     >
       <Switch>
-        <Route exact path='/' render={() => <Redirect to={'/home'} />} />
-        <Route exact path={'/manufacturer/:id'} component={ManufacturerPage} />
-        <Route exact path={'/home'} component={Manufacturers} />
+        <Route exact path={path} component={Manufacturers} />
+        <Route exact path={`${path}/manufacturer/:id`} component={ManufacturerPage} />
       </Switch>
     </PageContainer>
   );

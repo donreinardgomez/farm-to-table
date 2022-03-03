@@ -1,4 +1,4 @@
-export const randomDate = (start?: Date, end?: Date) => {
+export const getRandomDate = (start?: Date, end?: Date) => {
   if (!start) {
     start = new Date();
     start.setFullYear(start.getFullYear() - 1);
