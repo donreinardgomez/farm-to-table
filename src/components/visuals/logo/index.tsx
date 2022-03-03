@@ -78,4 +78,6 @@ export type Type =
   | 'avatar-suto'
   | 'avatar-nakayama'
   | 'avatar-min'
-  | 'avatar-don';
+  | 'avatar-don'
+  | 'store-heatmap-1'
+  | 'store-heatmap-2';

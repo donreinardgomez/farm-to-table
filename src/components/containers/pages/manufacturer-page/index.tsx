@@ -1,4 +1,5 @@
 import { IStore } from '@models/store';
+import { formatNumber } from '@utils/format-number';
 import { TextDisplay } from '@visuals/text-display';
 import React from 'react';
 import { connect } from 'react-redux';
