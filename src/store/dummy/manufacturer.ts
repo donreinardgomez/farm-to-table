@@ -23,6 +23,8 @@ export const dummyManufacturers: IManufacturer[] = [
     thumbnail: `man-logo-${getRandom(20)}`,
     aiFeedback: loremClass.generateParagraphs(getRandom(5)),
     overview: loremClass.generateParagraphs(getRandom(2)),
+    awards: 'Lifetime award',
+    homepage: 'https://fgfg.yy.com',
   },
   {
     id: 2,

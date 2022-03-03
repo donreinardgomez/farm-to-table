@@ -11,4 +11,7 @@ export interface IManufacturer {
   ranking?: number;
   items?: IItem[];
   aiFeedback?: string;
+  awards?: string;
+  originCountry?: string;
+  homepage?: string;
 }
