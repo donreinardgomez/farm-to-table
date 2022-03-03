@@ -11,11 +11,12 @@ export const AppHeader: React.FC<Props> = ({
   isSimple,
   onBurgerClick,
   onCameraClick,
+  onLogoClick,
 }) => {
   return (
     <div className={styles.header}>
       <div className={styles.logoBurgerContainer}>
-        <Logo className={styles.logo} type='logo-header' />
+        <Logo onClick={onLogoClick} className={styles.logo} type='logo-header' />
         {onBurgerClick && <Menu onClick={onBurgerClick} className={styles.burger} />}
       </div>
       {!isSimple && (
@@ -60,6 +61,7 @@ interface IStateProps {
   consumer: IConsumer;
   onBurgerClick?: () => void;
   onCameraClick?: () => void;
+  onLogoClick?: () => void;
   isSimple?: boolean;
 }
 

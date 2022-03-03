@@ -97,7 +97,7 @@ interface IStateProps {
   weight?: 'bold' | 'normal';
   color?: TColors;
   hoverColor?: TColors;
-  display?: 'block' | 'inline' | 'contents' | 'flex-centered-text';
+  display?: 'block' | 'inline' | 'contents' | 'flex-centered-text' | 'inline-flex-centered-text';
   align?: 'center' | 'end' | 'default';
   truncate?: 'ellipsis';
   children?: React.ReactNode;

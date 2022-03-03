@@ -27,7 +27,7 @@ export const generateDummyItem = (manufacturerId?: number): IItem => {
   return {
     id: getRandomNumber(10000),
     name: lorem.generateWords(2),
-    description: lorem.generateSentences(1),
+    description: lorem.generateSentences(20),
     greenPoint: getRandomNumber(200),
     image: getRandomPic(100, 100),
     type: lorem.generateWords(1),

@@ -1,3 +1,4 @@
+import { setDisplayItem } from '@actions/ui';
 import { IItem } from '@models/item';
 import { IStore } from '@models/store';
 import { generateDummyItem } from '@store/dummy/item-pool';
@@ -8,6 +9,7 @@ import { ItemCard } from '@visuals/item-card';
 import hash from 'object-hash';
 import React from 'react';
 import { connect } from 'react-redux';
+import { useHistory } from 'react-router';
 import { compose } from 'redux';
 import styles from './style.scss';
 const AppHomeFC: React.FC<Props> = ({
@@ -15,7 +17,13 @@ const AppHomeFC: React.FC<Props> = ({
     data: { items: dataItems },
     ui: { displayConsumer },
   },
+  setDisplayItem,
 }) => {
+  const history = useHistory();
+  const handleItemClick = (item: IItem) => {
+    setDisplayItem(item);
+    history.push('/app/item');
+  };
   const renderItemList = (total = 20) => {
     const displayItems = generateDummyPurchasedItems(total, displayConsumer?.id);
     if (!isOk(displayItems)) return;
@@ -24,7 +32,14 @@ const AppHomeFC: React.FC<Props> = ({
       const targetItem: IItem =
         dataItems.find((it) => it.id === item?.itemId) || generateDummyItem();
       if (!isOk(targetItem)) return;
-      return <ItemCard className={styles.scrollerItem} key={hash(i)} item={targetItem} />;
+      return (
+        <ItemCard
+          onClick={() => handleItemClick(targetItem)}
+          className={styles.scrollerItem}
+          key={hash(i)}
+          item={targetItem}
+        />
+      );
     });
   };
 
@@ -44,12 +59,14 @@ interface IStateProps {
   state: IStore;
 }
 
-interface IDispatchProps {}
+interface IDispatchProps {
+  setDisplayItem: (item: IItem) => void;
+}
 
 const mapStateToProps = (state: IStore): Partial<IStateProps> => ({
   state,
 });
 
-const mapDispatchToProps: IDispatchProps = {};
+const mapDispatchToProps: IDispatchProps = { setDisplayItem };
 
 export const AppHome = compose(connect(mapStateToProps, mapDispatchToProps))(AppHomeFC);

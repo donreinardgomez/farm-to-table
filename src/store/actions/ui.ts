@@ -1,4 +1,5 @@
 import { IConsumer } from '@models/consumer';
+import { IItem } from '@models/item';
 import { IManufacturer } from '@models/manufacturer';
 import { Action } from 'redux';
 
@@ -42,8 +43,19 @@ export const setAppHeaderSimple = (flag): ActionSetAppHeaderSimple => ({
   type: 'SET_APP_HEADER_SIMPLE',
 });
 
+interface ActionSetDisplayItem extends Action {
+  item: IItem;
+  type: 'SET_DISPLAY_ITEM';
+}
+
+export const setDisplayItem = (item: IItem): ActionSetDisplayItem => ({
+  item,
+  type: 'SET_DISPLAY_ITEM',
+});
+
 export type UiActions =
   | ActionSetDisplayConsumer
   | ActionSetDisplayManufacturer
   | ActionToggleMenu
-  | ActionSetAppHeaderSimple;
+  | ActionSetAppHeaderSimple
+  | ActionSetDisplayItem;
