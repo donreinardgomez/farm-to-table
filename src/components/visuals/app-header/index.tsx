@@ -1,4 +1,4 @@
-import { Camera, Menu } from '@material-ui/icons';
+import { Camera, Menu, Settings, Spa } from '@material-ui/icons';
 import { IConsumer } from '@models/consumer';
 import { formatNumber } from '@utils/format-number';
 import { Logo } from '@visuals/logo';
@@ -23,6 +23,7 @@ export const AppHeader: React.FC<Props> = ({
           <Logo className={styles.avatar} type={consumer?.avatar} />
           <div className={styles.topHalf}>
             <Camera onClick={onCameraClick} className={styles.camera} />
+            <Settings className={styles.camera} />
           </div>
           <div className={styles.bottomHalf}>
             <div className={styles.bottomHalfContent}>
@@ -32,7 +33,8 @@ export const AppHeader: React.FC<Props> = ({
               <TextDisplay weight='bold' size='large' color='gray-1'>
                 Wallet: {formatNumber(consumer?.walletPoints || 0)}円
               </TextDisplay>
-              <TextDisplay size='small' weight='bold' color='gray-3'>
+              <TextDisplay display='flex-centered-text' size='small' weight='bold' color='green-1'>
+                <Spa className={styles.leaf} />
                 {formatNumber(consumer?.greenPoints || 0)} Green Points
               </TextDisplay>
               <TextDisplay size='x-small' color='white'>

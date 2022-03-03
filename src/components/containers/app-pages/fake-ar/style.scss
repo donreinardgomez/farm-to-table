@@ -1,6 +1,54 @@
 @import '../../../global-styles/global.scss';
 
-.image {
-  width: 100wv;
+.container {
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $black;
+  justify-content: center;
+}
+
+.image {
+  width: 100vw;
+}
+
+.camera {
+  color: $white;
+  opacity: 80%;
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100px !important;
+  border: 8px solid;
+  border-radius: 50%;
+}
+
+.close {
+  color: $white;
+  opacity: 80%;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+.floating-text {
+  opacity: 90%;
+  background-color: $green-3;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+
+  &-container {
+    position: absolute;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
 }
