@@ -15,6 +15,11 @@ const ManufacturerPageFC: React.FC<Props> = ({ state, match }) => {
       <TextDisplay size='xx-large' weight='bold'>
         Manufacture Company Information:
       </TextDisplay>
+
+      <TextDisplay size='xxx-large' weight='bold' color='primary-1'>
+        NAKAYAMA
+      </TextDisplay>
+
       <div>
         <TextDisplay size='x-large' weight='bold'>
           Manufacture Name:
@@ -31,7 +36,6 @@ const ManufacturerPageFC: React.FC<Props> = ({ state, match }) => {
           Product Items:
         </TextDisplay>
       </div>
-
       <TextDisplay weight='normal'>Item 1</TextDisplay>
       <div className={styles.items}>
         <TextDisplay weight='normal'>Name: {displayManufacturer.items[0].name}</TextDisplay>
