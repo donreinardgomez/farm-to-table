@@ -2,6 +2,7 @@ import { IConsumer } from '@models/consumer';
 
 export const dummyConsumers: IConsumer[] = [
   {
+    id: 1,
     firstName: 'Mei',
     lastName: 'Khor',
     email: 'mei.khor@jp.ey.com',
@@ -12,6 +13,7 @@ export const dummyConsumers: IConsumer[] = [
     avatar: 'avatar-mei',
   },
   {
+    id: 2,
     firstName: 'Don',
     lastName: 'Gomez',
     email: 'don.reinard.gomez@jp.ey.com',
@@ -22,6 +24,7 @@ export const dummyConsumers: IConsumer[] = [
     avatar: 'avatar-don',
   },
   {
+    id: 3,
     firstName: 'Kazuyuki',
     lastName: 'Suto',
     email: 'kazuyuki.suto@jp.ey.com',
@@ -32,6 +35,7 @@ export const dummyConsumers: IConsumer[] = [
     avatar: 'avatar-suto',
   },
   {
+    id: 4,
     firstName: 'Joe',
     lastName: 'Ashizawa',
     email: 'joe.ashizawa@jp.ey.com',
@@ -42,6 +46,7 @@ export const dummyConsumers: IConsumer[] = [
     avatar: 'avatar-joe',
   },
   {
+    id: 5,
     firstName: 'Min',
     lastName: 'Luo',
     email: 'min.luo@jp.ey.com',
@@ -52,6 +57,7 @@ export const dummyConsumers: IConsumer[] = [
     avatar: 'avatar-min',
   },
   {
+    id: 6,
     firstName: 'Ryota',
     lastName: 'Nakayama',
     email: 'ryota.nakayama@jp.ey.com',
