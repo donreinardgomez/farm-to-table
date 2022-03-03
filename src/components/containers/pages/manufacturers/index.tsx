@@ -18,7 +18,7 @@ const ManufacturersFC: React.FC<Props> = ({
 }) => {
   const history = useHistory();
   return (
-    <div className={styles.table}>
+    <div className={styles.manufacturersTable}>
       {manufacturers.map((manufacturer, i) => (
         <ManufacturerRow
           className={styles.row}
