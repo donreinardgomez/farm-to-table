@@ -14,7 +14,7 @@ const lorem = new LoremIpsum({
   },
 });
 
-export const generateDummyItems = (total: number, manufacturerId: number): IItem[] => {
+export const generateDummyItems = (total: number, manufacturerId?: number): IItem[] => {
   if (total <= 0) return [];
   const generatedItems: IItem[] = [];
   for (let i = 1; i <= total; i++) {
@@ -29,7 +29,7 @@ export const generateDummyItem = (manufacturerId?: number): IItem => {
     name: lorem.generateWords(2),
     description: lorem.generateSentences(1),
     greenPoint: getRandomNumber(200),
-    image: getRandomPic(200, 200),
+    image: getRandomPic(100, 100),
     type: lorem.generateWords(1),
     manufacturerId: manufacturerId || getRandomNumber(50),
     distributionHistory: [

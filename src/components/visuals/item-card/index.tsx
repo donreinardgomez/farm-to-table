@@ -6,6 +6,7 @@ import styles from './style.scss';
 export const ItemCard: React.FC<Props> = ({ item, onClick }) => {
   return (
     <div className={styles.card} onClick={onClick}>
+      <img src={item.image} />
       <TextDisplay>{item.name}</TextDisplay>
     </div>
   );
