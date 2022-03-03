@@ -3,7 +3,6 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  margin-top: 110px;
 
   &.normal {
     flex-direction: column;
@@ -27,4 +26,12 @@
   &-menu {
     width: 200px;
   }
+}
+
+.mode-dashboard {
+  margin-top: 90px;
+}
+
+.mode-app {
+  margin-top: 0;
 }

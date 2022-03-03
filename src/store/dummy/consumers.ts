@@ -7,6 +7,9 @@ export const dummyConsumers: IConsumer[] = [
     email: 'mei.khor@jp.ey.com',
     badge: 'gold',
     greenPoints: 1000,
+    address: '123 Fake Streen, Fake Road, Fake City',
+    phoneNmber: '+81-80-999-9999',
+    avatar: 'avatar-mei',
   },
   {
     firstName: 'Don',
@@ -14,6 +17,9 @@ export const dummyConsumers: IConsumer[] = [
     email: 'don.reinard.gomez@jp.ey.com',
     badge: 'bronze',
     greenPoints: 250,
+    address: '456 Fake Streen, Fake Road, Fake City',
+    phoneNmber: '+81-80-888-8888',
+    avatar: 'avatar-don',
   },
   {
     firstName: 'Kazuyuki',
@@ -21,6 +27,9 @@ export const dummyConsumers: IConsumer[] = [
     email: 'kazuyuki.suto@jp.ey.com',
     badge: 'platinum',
     greenPoints: 50000,
+    address: '789 Fake Streen, Fake Road, Fake City',
+    phoneNmber: '+81-80-777-7777',
+    avatar: 'avatar-suto',
   },
   {
     firstName: 'Joe',
@@ -28,6 +37,9 @@ export const dummyConsumers: IConsumer[] = [
     email: 'joe.ashizawa@jp.ey.com',
     badge: 'silver',
     greenPoints: 500,
+    address: '101 Fake Streen, Fake Road, Fake City',
+    phoneNmber: '+81-80-666-6666',
+    avatar: 'avatar-joe',
   },
   {
     firstName: 'Min',
@@ -35,6 +47,9 @@ export const dummyConsumers: IConsumer[] = [
     email: 'min.luo@jp.ey.com',
     badge: 'none',
     greenPoints: 0,
+    address: '532 Fake Streen, Fake Road, Fake City',
+    phoneNmber: '+81-80-555-5555',
+    avatar: 'avatar-min',
   },
   {
     firstName: 'Ryota',
@@ -42,5 +57,8 @@ export const dummyConsumers: IConsumer[] = [
     email: 'ryota.nakayama@jp.ey.com',
     badge: 'bronze',
     greenPoints: 200,
+    address: '3453 Fake Streen, Fake Road, Fake City',
+    phoneNmber: '+81-80-444-4444',
+    avatar: 'avatar-nakayama',
   },
 ];

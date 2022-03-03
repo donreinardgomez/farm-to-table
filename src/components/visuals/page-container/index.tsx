@@ -14,11 +14,13 @@ export const PageContainer: React.FC<Props> = ({
   mode,
 }) => {
   return (
-    <div className={styles.pageContainer}>
-      <Header onLogoClick={onLogoClick} mode={mode} onBurgerClick={onBurgerClick} />
+    <div className={`${styles.pageContainer} ${styles[`mode-${mode}`]}`}>
+      {mode === 'dashboard' && (
+        <Header onLogoClick={onLogoClick} mode={mode} onBurgerClick={onBurgerClick} />
+      )}
       <div className={styles.contentsContainer}>
         <div className={styles.contents}>{children}</div>
-        {isMenuOn && <Menu menuItems={menuItems} />}
+        {isMenuOn && mode === 'dashboard' && <Menu menuItems={menuItems} />}
       </div>
     </div>
   );

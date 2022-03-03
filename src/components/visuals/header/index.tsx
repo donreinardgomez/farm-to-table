@@ -8,7 +8,7 @@ export const Header: React.FC<Props> = ({ onLogoClick, onBurgerClick }) => {
   return (
     <div className={`${styles.header} ${onLogoClick && styles.clickable}`}>
       <Logo onClick={onLogoClick} className={styles.logo} type='logo-header-mono' />
-      <Menu onClick={onBurgerClick} className={styles.burger} />
+      {onBurgerClick && <Menu onClick={onBurgerClick} className={styles.burger} />}
     </div>
   );
 };

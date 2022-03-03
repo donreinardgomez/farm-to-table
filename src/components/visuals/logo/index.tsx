@@ -72,4 +72,10 @@ export type Type =
   | 'logo-main'
   | 'logo-main-mono'
   | 'logo-header'
-  | 'logo-header-mono';
+  | 'logo-header-mono'
+  | 'avatar-joe'
+  | 'avatar-mei'
+  | 'avatar-suto'
+  | 'avatar-nakayama'
+  | 'avatar-min'
+  | 'avatar-don';

@@ -6,10 +6,14 @@ import React from 'react';
 import styles from './style.scss';
 
 export const Menu: React.FC<Props> = ({ className, menuItems }) => {
+  const handleOnClick = (name) => {
+    if (!window || name === 'Home') window.location.href = '/home';
+  };
+
   const renderMenuItems = () => {
     if (!isOk(menuItems)) return;
     return menuItems.map((item, i) => (
-      <div className={styles.item} key={hash(i)}>
+      <div className={styles.item} key={hash(i)} onClick={() => handleOnClick(item?.name)}>
         <TextDisplay size='x-large' weight='bold' color='white'>
           {item?.name}
         </TextDisplay>

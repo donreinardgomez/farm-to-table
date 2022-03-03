@@ -1,9 +1,10 @@
 import { IUi } from '@models/ui';
 import { AllAction } from '@store/actions';
+import { dummyConsumers } from '@store/dummy/consumers';
 import { updateObject } from '@utils/update-object';
 
 const initialState: IUi = {
-  displayConsumer: null,
+  displayConsumer: dummyConsumers[3],
   displayManufacturer: null,
   isMenuOn: false,
 };
