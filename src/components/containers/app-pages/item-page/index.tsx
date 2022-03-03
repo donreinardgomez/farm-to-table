@@ -2,6 +2,7 @@ import { Spa } from '@material-ui/icons';
 import { IStore } from '@models/store';
 import { formatNumber } from '@utils/format-number';
 import { AppSectionHeader } from '@visuals/app-section-header';
+import { Logo } from '@visuals/logo';
 import { TextDisplay } from '@visuals/text-display';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
@@ -38,7 +39,12 @@ const ItemPageFC: React.FC<Props> = ({
           {formatNumber(item.greenPoint)} Green Points
         </TextDisplay>
       </div>
-      VIEW FARM
+      <div className={styles.viewfarmContainer}>
+        <button className={styles.viewfarmButton}>
+          <Logo className={(styles.image, styles.viewfarmIcon)} type='camera' />
+          VIEW FARM
+        </button>
+      </div>
       <AppSectionHeader
         hasToggle
         isCollapsed={isDecriptionCollapsed}
