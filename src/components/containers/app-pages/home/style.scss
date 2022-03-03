@@ -1,0 +1,9 @@
+.scroller {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  width: 100vw;
+  border: 1px solid;
+  height: 100px;
+  justify-content: center;
+}

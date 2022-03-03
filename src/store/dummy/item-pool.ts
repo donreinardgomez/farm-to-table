@@ -1,5 +1,5 @@
 import { IItem } from '@models/item';
-import { getRandom } from '@utils/get-random';
+import { getRandomNumber } from '@utils/get-random';
 import { getRandomPic } from '@utils/random-image';
 import { LoremIpsum } from 'lorem-ipsum';
 
@@ -14,25 +14,30 @@ const lorem = new LoremIpsum({
   },
 });
 
-export const generateDummyItems = (total: number): IItem[] => {
+export const generateDummyItems = (total: number, manufacturerId: number): IItem[] => {
   if (total <= 0) return [];
   const generatedItems: IItem[] = [];
   for (let i = 1; i <= total; i++) {
-    generatedItems.push({
-      id: getRandom(10000),
-      name: lorem.generateWords(2),
-      description: lorem.generateSentences(1),
-      greenPoint: getRandom(200),
-      image: getRandomPic(200, 200),
-      type: lorem.generateWords(1),
-      distributionHistory: [
-        { name: `FARM ${getRandom(100)}` },
-        { name: lorem.generateWords(1) },
-        { name: `Manufacturer Company ${getRandom(50)}` },
-        { name: 'Super Store' },
-      ],
-      originCountry: lorem.generateWords(1),
-    });
+    generatedItems.push(generateDummyItem(manufacturerId));
   }
   return generatedItems;
+};
+
+export const generateDummyItem = (manufacturerId?: number): IItem => {
+  return {
+    id: getRandomNumber(10000),
+    name: lorem.generateWords(2),
+    description: lorem.generateSentences(1),
+    greenPoint: getRandomNumber(200),
+    image: getRandomPic(200, 200),
+    type: lorem.generateWords(1),
+    manufacturerId: manufacturerId || getRandomNumber(50),
+    distributionHistory: [
+      { name: `FARM ${getRandomNumber(100)}` },
+      { name: lorem.generateWords(1) },
+      { name: `Manufacturer Company ${getRandomNumber(50)}` },
+      { name: 'Super Store' },
+    ],
+    originCountry: lorem.generateWords(1),
+  };
 };

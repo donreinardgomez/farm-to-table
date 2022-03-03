@@ -1,4 +1,5 @@
 import { IItem } from '@models/item';
+import { getRandomNumber } from '@utils/get-random';
 
 export const dummyItemsForManufacturer1: IItem[] = [
   {
@@ -7,6 +8,7 @@ export const dummyItemsForManufacturer1: IItem[] = [
     name: 'Organic Orange',
     originCountry: 'USA',
     greenPoint: 100,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 2,
@@ -14,6 +16,7 @@ export const dummyItemsForManufacturer1: IItem[] = [
     name: 'Organic Cabbage',
     originCountry: 'Argentina',
     greenPoint: 200,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 3,
@@ -21,6 +24,7 @@ export const dummyItemsForManufacturer1: IItem[] = [
     name: 'Organic Tea',
     originCountry: 'Thailand',
     greenPoint: 300,
+    manufacturerId: getRandomNumber(50),
   },
 ];
 
@@ -32,6 +36,7 @@ export const dummyItemsForManufacturer2: IItem[] = [
     name: 'Frozen Tuna',
     originCountry: 'Sweden',
     greenPoint: 3000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 2,
@@ -40,6 +45,7 @@ export const dummyItemsForManufacturer2: IItem[] = [
     name: 'Fresh Tuna',
     originCountry: 'Iceland',
     greenPoint: 6000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 3,
@@ -48,6 +54,7 @@ export const dummyItemsForManufacturer2: IItem[] = [
     name: 'Frozen Tuna',
     originCountry: 'Russia',
     greenPoint: 2000,
+    manufacturerId: getRandomNumber(50),
   },
 ];
 
@@ -58,6 +65,7 @@ export const dummyItemsForManufacturer3: IItem[] = [
     name: 'Frozen Chicken',
     originCountry: 'Ukraine',
     greenPoint: 2000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 2,
@@ -65,6 +73,7 @@ export const dummyItemsForManufacturer3: IItem[] = [
     name: 'Fresh Lamb chops',
     originCountry: 'New Zealand',
     greenPoint: 4000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 3,
@@ -72,6 +81,7 @@ export const dummyItemsForManufacturer3: IItem[] = [
     name: 'Frozen Pork',
     originCountry: 'France',
     greenPoint: 4000,
+    manufacturerId: getRandomNumber(50),
   },
 ];
 
@@ -82,6 +92,7 @@ export const dummyItemsForManufacturer4: IItem[] = [
     name: 'Wanyu-Beaf 4A',
     originCountry: 'Japan',
     greenPoint: 7000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 2,
@@ -89,6 +100,7 @@ export const dummyItemsForManufacturer4: IItem[] = [
     name: 'Wanyu-Beaf 4A',
     originCountry: 'Japan',
     greenPoint: 6000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 3,
@@ -96,6 +108,7 @@ export const dummyItemsForManufacturer4: IItem[] = [
     name: 'Wanyu-Beaf 3A',
     originCountry: 'Japan',
     greenPoint: 5000,
+    manufacturerId: getRandomNumber(50),
   },
 ];
 
@@ -106,6 +119,7 @@ export const dummyItemsForManufacturer5: IItem[] = [
     name: 'mongo 5A',
     originCountry: 'Japan',
     greenPoint: 9000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 2,
@@ -113,6 +127,7 @@ export const dummyItemsForManufacturer5: IItem[] = [
     name: 'mongo 5A',
     originCountry: 'Japan',
     greenPoint: 8000,
+    manufacturerId: getRandomNumber(50),
   },
   {
     id: 3,
@@ -120,5 +135,6 @@ export const dummyItemsForManufacturer5: IItem[] = [
     name: 'mongo 5A',
     originCountry: 'Japan',
     greenPoint: 7000,
+    manufacturerId: getRandomNumber(50),
   },
 ];

@@ -21,8 +21,11 @@ export const AppHeader: React.FC<Props> = ({ consumer, onBurgerClick }) => {
             <TextDisplay weight='bold' size='xxx-large' color='white'>
               {consumer?.firstName} {consumer?.lastName}
             </TextDisplay>
-            <TextDisplay weight='bold' color='gray-1'>
-              {formatNumber(consumer?.greenPoints || 0)} points
+            <TextDisplay weight='bold' size='large' color='gray-1'>
+              Wallet: {formatNumber(consumer?.walletPoints || 0)}円
+            </TextDisplay>
+            <TextDisplay size='small' weight='bold' color='gray-3'>
+              {formatNumber(consumer?.greenPoints || 0)} Green Points
             </TextDisplay>
             <TextDisplay size='x-small' color='white'>
               {consumer?.address}

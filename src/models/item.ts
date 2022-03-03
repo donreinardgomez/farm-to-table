@@ -2,6 +2,7 @@ export interface IItem {
   id: number;
   name: string;
   description: string;
+  manufacturerId: number;
   image?: string;
   distributionHistory?: { name: string; coordinates?: { x: number; y: number } }[];
   type?: string;
