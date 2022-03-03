@@ -194,7 +194,7 @@ export type Props = IStateProps & IDispatchProps;
 
 interface IStateProps {
   graphConfig: IGraphConfig;
-  title: string;
+  title?: string;
   graphHeight?: string;
   tooltipMode?: 'singular' | 'multiple';
 }

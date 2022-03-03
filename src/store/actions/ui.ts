@@ -1,6 +1,7 @@
 import { IConsumer } from '@models/consumer';
 import { IItem } from '@models/item';
 import { IManufacturer } from '@models/manufacturer';
+import { IStaff } from '@models/staff';
 import { Action } from 'redux';
 
 interface ActionSetDisplayConsumer extends Action {
@@ -53,9 +54,20 @@ export const setDisplayItem = (item: IItem): ActionSetDisplayItem => ({
   type: 'SET_DISPLAY_ITEM',
 });
 
+interface ActionSetDisplayStaff extends Action {
+  staff: IStaff;
+  type: 'SET_DISPLAY_STAFF';
+}
+
+export const setDisplayStaff = (staff: IStaff): ActionSetDisplayStaff => ({
+  staff,
+  type: 'SET_DISPLAY_STAFF',
+});
+
 export type UiActions =
   | ActionSetDisplayConsumer
   | ActionSetDisplayManufacturer
   | ActionToggleMenu
   | ActionSetAppHeaderSimple
-  | ActionSetDisplayItem;
+  | ActionSetDisplayItem
+  | ActionSetDisplayStaff;

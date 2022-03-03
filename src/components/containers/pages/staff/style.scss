@@ -1,0 +1,55 @@
+@import '../../../global-styles/global.scss';
+
+.container {
+  height: 100vh;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 10px solid $ey-yellow;
+  border-radius: 50%;
+
+  &-container {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 50px;
+  }
+}
+
+.mood {
+  font-size: 60px !important ;
+
+  &-container {
+    width: 270px;
+    height: 100%;
+    margin: -10px 10px;
+  }
+}
+
+.top-half {
+  height: 150px;
+  background-color: $white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottom-half {
+  background-color: $ey-yellow;
+  padding: 10px 0;
+}
+
+.additional-info-container {
+  padding-left: 290px;
+}
+
+.info-container {
+  padding: 20px;
+}
+
+.graph-container {
+  border-radius: 10px;
+  border: 5px solid $gray-2;
+  box-sizing: border-box;
+  overflow: hidden;
+}

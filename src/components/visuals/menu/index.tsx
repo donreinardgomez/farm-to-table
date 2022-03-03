@@ -17,7 +17,7 @@ export const Menu: React.FC<Props> = ({ className, menuItems }) => {
         window.location.href = '/app';
         break;
       case 'Staff Management':
-        window.location.href = '/biz/staff';
+        window.location.href = '/biz/staffs';
         break;
     }
   };

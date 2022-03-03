@@ -2,12 +2,15 @@ import { IUi } from '@models/ui';
 import { AllAction } from '@store/actions';
 import { dummyConsumers } from '@store/dummy/consumers';
 import { generateDummyItem } from '@store/dummy/item-pool';
+import { dummyManufacturers } from '@store/dummy/manufacturer';
+import { dummyStaffs } from '@store/dummy/staffs';
 import { updateObject } from '@utils/update-object';
 
 const initialState: IUi = {
-  displayConsumer: dummyConsumers[0],
+  displayConsumer: dummyConsumers[3],
   displayItem: generateDummyItem(),
-  displayManufacturer: null,
+  displayManufacturer: dummyManufacturers[2],
+  displayStaff: dummyStaffs[2],
   isMenuOn: false,
   isAppHeaderSimple: false,
 };
@@ -25,6 +28,10 @@ export function ui(state: IUi = initialState, action: AllAction) {
     case 'SET_DISPLAY_ITEM':
       return updateObject(state, {
         displayItem: action.item,
+      });
+    case 'SET_DISPLAY_STAFF':
+      return updateObject(state, {
+        displayStaff: action.staff,
       });
     case 'TOGGLE_MENU':
       return updateObject(state, {
