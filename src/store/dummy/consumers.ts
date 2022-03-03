@@ -17,6 +17,7 @@ export const dummyConsumers: IConsumer[] = [
       height: 170,
       weight: 70,
     },
+    walletPoints: 14322,
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ export const dummyConsumers: IConsumer[] = [
       height: 170,
       weight: 70,
     },
+    walletPoints: 354433,
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ export const dummyConsumers: IConsumer[] = [
       height: 170,
       weight: 70,
     },
+    walletPoints: 565653,
   },
   {
     id: 4,
@@ -68,6 +71,7 @@ export const dummyConsumers: IConsumer[] = [
       height: 170,
       weight: 70,
     },
+    walletPoints: 4355,
   },
   {
     id: 5,
@@ -85,6 +89,7 @@ export const dummyConsumers: IConsumer[] = [
       height: 170,
       weight: 70,
     },
+    walletPoints: 6522,
   },
   {
     id: 6,
@@ -102,5 +107,6 @@ export const dummyConsumers: IConsumer[] = [
       height: 170,
       weight: 70,
     },
+    walletPoints: 200,
   },
 ];

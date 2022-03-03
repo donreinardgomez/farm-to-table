@@ -7,7 +7,7 @@ export interface IConsumer {
   greenPoints?: number;
   phoneNmber?: string;
   address?: string;
-  walletPoints?: number;
+  walletPoints: number;
   attributes?: {
     height?: number;
     weight?: number;

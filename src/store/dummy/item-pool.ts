@@ -34,4 +34,5 @@ export const generateDummyItems = (total: number): IItem[] => {
       originCountry: lorem.generateWords(1),
     });
   }
+  return generatedItems;
 };

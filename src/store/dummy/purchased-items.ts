@@ -12,4 +12,6 @@ export const generateDummyPurchasedItems = (total: number): IPurchaseItem[] => {
       purchaseDate: getRandomDate(),
     });
   }
+
+  return purchasedItems;
 };

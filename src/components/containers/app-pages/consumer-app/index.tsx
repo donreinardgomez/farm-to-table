@@ -8,7 +8,7 @@ import { useHistory, useRouteMatch } from 'react-router';
 import { Route, RouteComponentProps, Switch } from 'react-router-dom';
 import { compose } from 'redux';
 import { AppHome } from '../home';
-import { PurchasedItems } from '../purchased-items';
+import { PurchaseHistory } from '../purchase-history';
 
 const ConsumerAppFC: React.FC<Props> = ({
   state: {
@@ -25,7 +25,7 @@ const ConsumerAppFC: React.FC<Props> = ({
       <AppHeader consumer={displayConsumer} onBurgerClick={toggleMenu} />
       <Switch>
         <Route exact path={path} component={AppHome} />
-        <Route path={`${path}/hist`} component={PurchasedItems} />
+        <Route path={`${path}/hist`} component={PurchaseHistory} />
       </Switch>
     </PageContainer>
   );

@@ -6,13 +6,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 
-const PurchasedItemsFC: React.FC<Props> = ({
+const PurchaseHistoryFC: React.FC<Props> = ({
   state: {
     data: { purchasedItems, items: dataItems },
     ui: { displayConsumer },
   },
 }) => {
-  const renderPurchasedItems = () => {
+  const renderPurchaseHistory = () => {
     if (!isOk(purchasedItems)) return;
     const displayItems = purchasedItems.filter((item) => item?.consumerId === displayConsumer.id);
     if (!isOk(displayItems)) return;
@@ -27,7 +27,7 @@ const PurchasedItemsFC: React.FC<Props> = ({
   return (
     <div>
       <AppSectionHeader>Purchased Items</AppSectionHeader>
-      {renderPurchasedItems()}
+      {renderPurchaseHistory()}
     </div>
   );
 };
@@ -46,6 +46,6 @@ const mapStateToProps = (state: IStore): Partial<IStateProps> => ({
 
 const mapDispatchToProps: IDispatchProps = {};
 
-export const PurchasedItems = compose(connect(mapStateToProps, mapDispatchToProps))(
-  PurchasedItemsFC,
+export const PurchaseHistory = compose(connect(mapStateToProps, mapDispatchToProps))(
+  PurchaseHistoryFC,
 );
