@@ -38,6 +38,7 @@ const ItemPageFC: React.FC<Props> = ({
           {formatNumber(item.greenPoint)} Green Points
         </TextDisplay>
       </div>
+      VIEW FARM
       <AppSectionHeader
         hasToggle
         isCollapsed={isDecriptionCollapsed}
@@ -50,7 +51,6 @@ const ItemPageFC: React.FC<Props> = ({
           <TextDisplay>{item.description}</TextDisplay>
         </div>
       )}
-
       <AppSectionHeader
         hasToggle
         isCollapsed={isDistributionCollapsed}
