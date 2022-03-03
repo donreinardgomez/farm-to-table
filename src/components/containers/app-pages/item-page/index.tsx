@@ -17,7 +17,6 @@ const ItemPageFC: React.FC<Props> = ({
   const [isDecriptionCollapsed, setIsDecriptionCollapsed] = useState(true);
   const [isDistributionCollapsed, setIsDistributionCollapsed] = useState(true);
   const [isPalyMovie, setIsPalyMovie] = useState(false);
-  const [isDistributionCollapsed, setIsDistributionCollapsed] = useState(false);
 
   return (
     <>
