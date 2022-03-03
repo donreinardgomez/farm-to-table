@@ -1,0 +1,14 @@
+@import '../../../global-styles/global.scss';
+
+.staff-list {
+  border: 5px solid $gray-3;
+  margin: 10px;
+}
+
+.row {
+  border-bottom: 1px dotted $gray-4;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
