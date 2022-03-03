@@ -31,6 +31,7 @@ export const getDummyItemPool = (total: number): IItem[] => {
         { name: `Manufacturer Company ${getRandom(50)}` },
         { name: 'Super Store' },
       ],
+      originCountry: lorem.generateWords(1),
     });
   }
 };
