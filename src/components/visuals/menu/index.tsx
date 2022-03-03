@@ -10,7 +10,7 @@ export const Menu: React.FC<Props> = ({ className, menuItems }) => {
     if (!isOk(menuItems)) return;
     return menuItems.map((item, i) => (
       <div className={styles.item} key={hash(i)}>
-        <TextDisplay size='x-large' color='white'>
+        <TextDisplay size='x-large' weight='bold' color='white'>
           {item?.name}
         </TextDisplay>
       </div>
