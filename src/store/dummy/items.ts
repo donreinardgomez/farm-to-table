@@ -6,7 +6,7 @@ export const dummyItemsForManufacturer1: IItem[] = [
     description: 'This organic fruit grows up in the sunny florida',
     name: 'Organic Orange',
     originCountry: 'USA',
-    greenPoint: 200,
+    greenPoint: 100,
   },
   {
     id: 2,
