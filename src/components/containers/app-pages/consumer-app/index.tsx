@@ -12,7 +12,7 @@ import { PurchaseHistory } from '../purchase-history';
 
 const ConsumerAppFC: React.FC<Props> = ({
   state: {
-    ui: { isMenuOn, displayConsumer },
+    ui: { isMenuOn, displayConsumer, isAppHeaderSimple },
   },
   toggleMenu,
 }) => {
@@ -20,9 +20,18 @@ const ConsumerAppFC: React.FC<Props> = ({
   document.body.style.backgroundColor = '#f5f7f9';
   const { path } = useRouteMatch();
 
+  const handleCameraClick = () => {
+    history.push('/fake-ar');
+  };
+
   return (
     <PageContainer mode='app' isMenuOn={isMenuOn} onLogoClick={() => history.push('/app')}>
-      <AppHeader consumer={displayConsumer} onBurgerClick={toggleMenu} />
+      <AppHeader
+        isSimple={isAppHeaderSimple}
+        consumer={displayConsumer}
+        onCameraClick={handleCameraClick}
+        onBurgerClick={toggleMenu}
+      />
       <Switch>
         <Route exact path={path} component={AppHome} />
         <Route path={`${path}/hist`} component={PurchaseHistory} />

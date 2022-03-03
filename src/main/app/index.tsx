@@ -1,3 +1,4 @@
+import { FakeAR } from '@containers/app-pages/fake-ar';
 import { Layout } from '@containers/pages/layout';
 import { Test } from '@containers/pages/test';
 import { store } from '@store/index';
@@ -11,6 +12,7 @@ export function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path={'/test'} component={Test} />
+          <Route exact path={'/fake-ar'} component={FakeAR} />
           <Route exact component={Layout} />
         </Switch>
       </BrowserRouter>

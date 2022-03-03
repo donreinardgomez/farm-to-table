@@ -5,4 +5,5 @@ export interface IUi {
   displayConsumer: IConsumer;
   displayManufacturer: IManufacturer;
   isMenuOn: boolean;
+  isAppHeaderSimple: boolean;
 }

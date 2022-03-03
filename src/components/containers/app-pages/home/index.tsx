@@ -16,8 +16,8 @@ const AppHomeFC: React.FC<Props> = ({
     ui: { displayConsumer },
   },
 }) => {
-  const renderItemList = () => {
-    const displayItems = generateDummyPurchasedItems(20, displayConsumer?.id);
+  const renderItemList = (total = 20) => {
+    const displayItems = generateDummyPurchasedItems(total, displayConsumer?.id);
     if (!isOk(displayItems)) return;
 
     return displayItems.map((item, i) => {
@@ -33,7 +33,7 @@ const AppHomeFC: React.FC<Props> = ({
       <AppSectionHeader>Recommendations</AppSectionHeader>
       <div className={styles.scroller}>{renderItemList()}</div>
       <AppSectionHeader>Purchase history</AppSectionHeader>
-      <div className={styles.scroller}>{renderItemList()}</div>
+      <div className={styles.scroller}>{renderItemList(50)}</div>
     </div>
   );
 };

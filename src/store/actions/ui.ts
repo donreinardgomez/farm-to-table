@@ -32,4 +32,18 @@ export const toggleMenu = (): ActionToggleMenu => ({
   type: 'TOGGLE_MENU',
 });
 
-export type UiActions = ActionSetDisplayConsumer | ActionSetDisplayManufacturer | ActionToggleMenu;
+interface ActionSetAppHeaderSimple extends Action {
+  flag: boolean;
+  type: 'SET_APP_HEADER_SIMPLE';
+}
+
+export const setAppHeaderSimple = (flag): ActionSetAppHeaderSimple => ({
+  flag,
+  type: 'SET_APP_HEADER_SIMPLE',
+});
+
+export type UiActions =
+  | ActionSetDisplayConsumer
+  | ActionSetDisplayManufacturer
+  | ActionToggleMenu
+  | ActionSetAppHeaderSimple;
