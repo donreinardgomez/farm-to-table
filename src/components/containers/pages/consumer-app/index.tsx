@@ -2,6 +2,7 @@ import { toggleMenu } from '@actions/ui';
 import { IStore } from '@models/store';
 import { AppHeader } from '@visuals/app-header';
 import { PageContainer } from '@visuals/page-container';
+import { RandomPic } from '@visuals/random-pic';
 import { TextDisplay } from '@visuals/text-display';
 import React from 'react';
 import { connect } from 'react-redux';
@@ -24,6 +25,7 @@ const ConsumerAppFC: React.FC<Props> = ({
       <TextDisplay color='white' className={styles.sectionHeader} weight='bold' size='large'>
         Purchase History
       </TextDisplay>
+      <RandomPic width={200} height={100} />
     </PageContainer>
   );
 };
