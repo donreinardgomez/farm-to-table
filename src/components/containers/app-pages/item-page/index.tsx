@@ -60,7 +60,14 @@ const ItemPageFC: React.FC<Props> = ({
       </AppSectionHeader>
       {isDistributionCollapsed && (
         <div className={styles.infoContainer}>
-          <TextDisplay>{JSON.stringify(item.distributionHistory)}</TextDisplay>
+          <TextDisplay>
+            <ol className={styles.workFlow}>
+              <li>{item.distributionHistory[0].name}</li>
+              <li>{item.distributionHistory[1].name}</li>
+              <li>{item.distributionHistory[2].name}</li>
+              <li>{item.distributionHistory[3].name}</li>
+            </ol>
+          </TextDisplay>
         </div>
       )}
     </div>
