@@ -16,4 +16,5 @@ export const dummyMenuItems: IMenuItem[] = [
   { name: 'AI Settings' },
   { name: 'Dashboard' },
   { name: 'Settings' },
+  { name: 'App' },
 ];

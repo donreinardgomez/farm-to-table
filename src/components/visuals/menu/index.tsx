@@ -7,7 +7,15 @@ import styles from './style.scss';
 
 export const Menu: React.FC<Props> = ({ className, menuItems }) => {
   const handleOnClick = (name) => {
-    if (!window || name === 'Home') window.location.href = '/home';
+    if (!window) return;
+
+    switch (name) {
+      case 'Home':
+        window.location.href = '/home';
+        break;
+      case 'App':
+        window.location.href = '/app';
+    }
   };
 
   const renderMenuItems = () => {
