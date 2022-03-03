@@ -4,7 +4,7 @@ import { dummyConsumers } from '@store/dummy/consumers';
 import { updateObject } from '@utils/update-object';
 
 const initialState: IUi = {
-  displayConsumer: dummyConsumers[3],
+  displayConsumer: dummyConsumers[0],
   displayManufacturer: null,
   isMenuOn: false,
 };

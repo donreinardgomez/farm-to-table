@@ -7,5 +7,12 @@ export interface IConsumer {
   greenPoints?: number;
   phoneNmber?: string;
   address?: string;
+  walletPoints?: number;
+  attributes?: {
+    height?: string;
+    weight?: number;
+    gender?: number;
+    birthDate?: Date;
+  };
   badge?: 'none' | 'bronze' | 'silver' | 'gold' | 'platinum';
 }

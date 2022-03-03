@@ -6,6 +6,7 @@ export interface IManufacturer {
   overview: string;
   industry: string;
   thumbnail?: string;
+  imageUrl?: string;
   address?: string;
   rating?: number;
   ranking?: number;
